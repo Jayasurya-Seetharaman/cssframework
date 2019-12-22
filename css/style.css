@@ -2,8 +2,8 @@
 *{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 *{scrollbar-width: thin;}
 *:focus { outline: none; }
-html {font-family: 'interregular'; width: 100%;}
-body {font-family: 'interregular'; padding: 0px; margin: 0px; width: 100%;color: #0b0d17;font-size: 14px;font-weight: 400; line-height: 1.2;}
+html {font-family: 'Poppins', sans-serif;width: 100%;}
+body {font-family: 'Poppins', sans-serif;padding: 0px; margin: 0px; width: 100%;color: #0b0d17;font-size: 14px;font-weight: 400; line-height: 1.2;}
 body::-webkit-scrollbar-track, .leftAside .asideMenu::-webkit-scrollbar-track, .csPortfolio .cspHeight::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5; border-radius: 10px; }
 body::-webkit-scrollbar, .leftAside .asideMenu::-webkit-scrollbar, .csPortfolio .cspHeight::-webkit-scrollbar {width: 8px; background-color: #F5F5F5; }
 body::-webkit-scrollbar-thumb, .leftAside .asideMenu::-webkit-scrollbar-thumb, .csPortfolio .cspHeight::-webkit-scrollbar-thumb {border-radius: 10px; background-color: #959fa5;}
@@ -50,8 +50,9 @@ img{max-width: 100%;display: inline-block;}
 .textRight { text-align: right !important }
 .textCenter { text-align: center !important }
 .textJustify { text-align: justify !important }
-.autocenter{margin: 0 auto;}
-.valignmiddle{vertical-align: middle;}
+.autoCenter{margin: 0 auto;}
+.verticalMiddle{vertical-align: middle;}
+.dTableCell {display: table-cell;}
 .uppercase { text-transform: uppercase !important }
 .block { display: block !important; }
 .inlineblock { display: inline-block; }
@@ -168,7 +169,7 @@ img{max-width: 100%;display: inline-block;}
 /*GLOBAL*/
 .bodyContainer{min-height: 88vh;}
 .noScroll{height: 100%;width: 100%;overflow: hidden !important;position: relative;}
-h1,h2,h3,h4,h5,h6{color: #0b0d17;font-family: 'Roboto Slab', serif;margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6{color: #0b0d17;font-family: 'Playfair Display', serif;margin: 0;padding: 0;}
 h1{font-size: 60px;font-weight: 300;}
 h2{font-size: 48px;font-weight: 300;}
 h3, h1.cSize{font-size: 48px;font-weight: 300;}
@@ -176,7 +177,7 @@ h4, h2.cSize{font-size: 36px;font-weight: 300;}
 h3.cSize{font-size: 28px;}
 h5{font-size: 24px;font-weight: 400;}
 h6{font-size: 21px;font-weight: 300;}
-.caption{font-size: 18px;font-family: 'Roboto Slab', serif;font-weight: 300;}
+.caption{font-size: 18px;font-family: 'Playfair Display', serif;font-weight: 300;}
 .caption a:hover{color: #0024ff;}
 input, select, textarea, button, label{font-family: 'interregular';}
 p{margin: 0;padding: 0;}
