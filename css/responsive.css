@@ -1,0 +1,119 @@
+@media only screen and (max-width: 1180px) {
+    .container1180{max-width: 100%;}
+    .pagePad{padding-left: 5%;padding-right: 5%;}
+}
+@media only screen and (max-width: 1080px) {
+    .flexR1080 { display: block; }
+    header .myAcc .myaccBtn, header .myAcc.active .myaccBtn{background-image: none;padding-right: 0;}
+}
+@media only screen and (max-width: 1024px) {
+    .flexR1024{display: block;}
+}
+@media only screen and (max-width: 991px) {
+    .flexR991 { display: block; }
+    .flexM991{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+    .desktop991{display: none;}
+    .mobile991{display: block;}
+    .pagePad{padding-left: 8%;padding-right: 8%;}
+    header{padding: 25px 4%;}
+    header .headerInner{}
+    header .header.minHeader{padding: 0;}
+    header .headerMenu{display: none;}
+    header .menuBox .navIcon {right: 6%; top: 25px; }
+    nav.menuBox .menuLogo{top: 25px;}
+    nav .mbLeft, nav .mbRight{height: auto;width: 100%;max-width: unset;min-width: unset;padding: 80px 8% 8%;}
+    nav .mbRight{padding: 8%}
+    nav .mbrGapTop {margin-top: 40px;}
+    nav .mbrGapBottom{margin-bottom: 0}
+    nav.menuBox .mbStrip{height: 75px;}
+}
+@media only screen and (max-width: 840px) {
+    .flexResponsive840 { display: block; }
+    .flexMob840 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+    .flexMob840{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+    .desktop840{display: none;}
+    .mobile840{display: block;}
+}
+@media only screen and (max-width: 768px) {
+    .desktop { display: none; }
+    .mobile { display: block; }
+    .flexR768 { display: block; }
+    .flexM768{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+    .container{width: auto;max-width: 100%;}
+    .container95, .container90, .container85, .container80, .container75, .container1366{max-width: 100%; width: auto;}
+    .mobalignleft{text-align: left !important;}
+    .mobaligncenter{text-align: center !important;}
+    .mobautocenter{margin: 0 auto;}
+    .pageLPad{padding-left: 5%;padding-right: 0;}
+    .p0030 { padding-top: 0px;  padding-bottom: 25px; }
+    .p3000 { padding-top: 25px; padding-bottom: 0px; }
+    .p3030 { padding-top: 25px; padding-bottom: 25px; }
+    .p0060 { padding-top: 0px;  padding-bottom: 45px; }
+    .p6000 { padding-top: 45px; padding-bottom: 0px; }
+    .p6060 { padding-top: 45px; padding-bottom: 45px; }
+    .p3060 { padding-top: 25px; padding-bottom: 45px; }
+    .p6030 { padding-top: 45px; padding-bottom: 25px; }
+    .p0090 { padding-top: 00px; padding-bottom: 60px; }
+    .p9000 { padding-top: 60px; padding-bottom: 00px; }
+    .p3090 { padding-top: 25px; padding-bottom: 60px; }
+    .p9030 { padding-top: 60px; padding-bottom: 25px; }
+    .p6090 { padding-top: 45px; padding-bottom: 60px; }
+    .p9060 { padding-top: 60px; padding-bottom: 45px; }
+    .p9090 { padding-top: 60px; padding-bottom: 60px; }
+    .p00120 { padding-top: 0px; padding-bottom: 90px; }
+    .p12000 { padding-top: 90px; padding-bottom: 0px; }
+    .p30120 { padding-top: 25px; padding-bottom: 90px; }
+    .p12030 { padding-top: 90px; padding-bottom: 25px; }
+    .p60120 { padding-top: 45px; padding-bottom: 60px; }
+    .p12060 { padding-top: 90px; padding-bottom: 45px; }
+    .p120120 { padding-top: 90px; padding-bottom: 90px; }
+    .p0020 { padding-top: 0px;  padding-bottom: 20px }
+    .p2000 { padding-top: 20px;  padding-bottom: 0px }
+    .p2020 { padding-top: 20px;  padding-bottom: 20px }
+    .p2040 { padding-top: 20px;  padding-bottom: 35px }
+    .p4020 { padding-top: 35px;  padding-bottom: 20px }
+    .p0040 { padding-top: 0px;  padding-bottom: 35px }
+    .p4000 { padding-top: 35px;  padding-bottom: 0px }
+    .p4040 { padding-top: 35px;  padding-bottom: 35px }
+    .m0030 { margin-top: 0px;  margin-bottom: 25px }
+    .m0060 { margin-top: 0px;  margin-bottom: 45px }
+    .m3000 { margin-top: 25px; margin-bottom: 0px }
+    .m6000 { margin-top: 45px; margin-bottom: 0px }
+    .m3030 { margin-top: 25px; margin-bottom: 25px }
+    .m6030 { margin-top: 45px; margin-bottom: 25px }
+    .m6060 { margin-top: 45px; margin-bottom: 45px }
+}
+@media only screen and (max-width: 680px) {
+    .flexR680 { display: block; }
+    .flexM680{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+    .desktop680{display: none;}
+    .mobile680{display: block;}
+    header, .pagePad, .detailsPage2 .imgContSec{padding-left: 20px;padding-right: 20px;}
+    header .topLogo img{max-height: 20px;margin-left: -14px;}
+    nav.menuBox .menuLogo{height: 20px;left: 22px;}
+}
+@media only screen and (max-width: 660px) {        
+    .flexR660 { display: block; }
+}
+@media only screen and (max-width: 580px) {
+    .flexResponsive580 { display: block; }
+    .desktop580{display: none;}
+    .mobile580{display: block;}
+    nav .mbLeft{padding: 75px 30px 50px;}
+    nav .mbRight{padding: 50px 30px;}
+    nav .menuFooter{margin-top: 30px;}
+}
+@media only screen and (max-width: 520px) {
+    .flexR520 { display: block; }
+    .desktop520{display: none;}
+    .mobile520{display: block;}
+}
+@media only screen and (max-width: 480px) {
+    .flexR480{display: block;}
+}
+@media only screen and (max-width: 420px) {
+    .flexR420{display: block;}
+}
+@media only screen and (max-width: 380px) {}
+@media only screen and (max-width: 359px) {
+}
