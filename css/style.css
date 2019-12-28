@@ -255,3 +255,15 @@ ul li,ol li{}
 .alertDismiss{padding-right: 2rem;}
 .alertDismiss .close{position: absolute; top: 0; right: 0; padding: .75rem 1.25rem; color: inherit; cursor: pointer;}
 /*ALERTS*/
+
+/*TOAST*/
+.toast{position: absolute;width: 350px; max-width: 350px; overflow: hidden; font-size: .875rem; background-color: rgba(255,255,255,.85); background-clip: padding-box; border: 1px solid rgba(0,0,0,.1); box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); display: none; border-radius: .25rem;transition: .3s;-webkit-transition: .3s;}
+.toast .toastHeader{display: flex; -ms-flex-align: center; align-items: center; justify-content: space-between; padding: .5rem .75rem; color: #6c757d; background-color: rgba(255,255,255,.85); background-clip: padding-box; border-bottom: 1px solid rgba(0,0,0,.05);}
+.toast .toastHeader .close{background: none; border: none; padding: 0; margin: 0; font-size: 18px;}
+.toast .toastBody{padding: .75rem;}
+.toast.show{display: block;}
+/*TOAST*/
+
+/*BUTTON*/
+button{cursor: pointer;}
+/*BUTTON*/
