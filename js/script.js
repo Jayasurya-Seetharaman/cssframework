@@ -33,4 +33,23 @@ $(document).ready(function () {
         $(this).closest(".toast").removeClass("show");
     });
     /*TOAST*/
+
+    /*DROPDOWN*/
+    $(".dropdown.click .ddTrigger").click(function () {
+        if ($(this).closest(".dropdown").hasClass("right")) {
+            var width = $(this).closest(".dropdown").width();
+            var val = 'translate3d(' + width + 'px, 0px, 0px)';
+            console.log('width: ' + width);
+            console.log('val: ' + val);
+            $(this).siblings(".ddmenu").css({
+                'will-change': 'transform',
+                'transform': val + 'translateZ(0)',
+                'left': '0px',
+                'top': '0px'
+            });
+            $(this).siblings(".ddmenu").toggle();
+        } else {
+            $(this).siblings(".ddmenu").toggle();
+        }
+    });
 });
