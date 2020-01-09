@@ -52,4 +52,23 @@ $(document).ready(function () {
             $(this).siblings(".ddmenu").toggle();
         }
     });
+    /*DROPDOWN*/
+
+    /*COLLAPSE*/
+    $(".collapseTrigger").click(function () {
+        var targetId = $(this).data("target");
+        $(targetId).slideToggle();
+    });
+    /*COLLAPSE*/
+
+    /*ACCORDION*/
+    $(".accordionTrigger").click(function () {
+        if ($(this).closest(".accordionGroup").hasClass("collapse")) {
+            $(this).siblings(".accordionBody").slideToggle();
+            $(this).closest(".accordion").siblings(".accordion").children(".accordionBody").slideUp();
+        } else {
+            $(this).siblings(".accordionBody").slideToggle();
+        }
+    });
+    /*ACCORDION*/
 });

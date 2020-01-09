@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LightCss | Cards & Dropdowns</title>
+    <title>LightCss | Collapse & Accordion</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
@@ -36,7 +36,6 @@
         <div class="container1180 pagePad p4040">
             <div class="flex">
                 <div class="flex1">
-
                     <ul class="sideNav">
                         <li class="snMenuDD">
                             <a href="" class="snmDDHead">Basic</a>
@@ -78,35 +77,82 @@
                 </div>
                 <div class="flex4">
                     <div class="w600">
-                        <h1>Cards</h1>
-                        <h4 class="p2020">Basic Card</h4>
-                        <div class="card">
-                            <div class="cardBody">
-                                <div class="cardTitle">Card Title</div>
-                                <div class="pg1 mb10">Some example text. Some example text.</div>
-                                <a href="#" class="cardLink">Card link</a>
-                                <a href="#" class="cardLink">Another link</a>
-                            </div>
+                        <h1>Collapse</h1>
+                        <h4 class="p2020">Basic Collapse</h4>
+                        <button class="btn primary collapseTrigger" data-target="#demo1">Collapse</button>
+                        <div id="demo1" class="collapse">
+                            <p class="p2020">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.</p>
+                        </div>
+                        <h4 class="p2020">Show Collapse</h4>
+                        <button class="btn primary collapseTrigger" data-target="#demo2">Collapse</button>
+                        <div id="demo2" class="collapse show">
+                            <p class="p2020">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.</p>
                         </div>
 
-                        <h4 class="p2020">Card with Image</h4>
-                        <div class="card">
-                            <img src="../img/profile.png" class="dBlock" />
-                            <div class="cardBody">
-                                <div class="cardTitle">Card Title</div>
-                                <div class="pg1 mb10">Some example text. Some example text.</div>
-                                <a href="#" class="btn primary">Card link</a>
-                            </div>
-                        </div>
-
-                        <h2 class="p4000">Dropdowns</h2>
+                        <h2 class="p4000">Accordion</h2>
                         <h4 class="p2020">Basic</h4>
-                        <div class="dropdown click">
-                            <button type="button" class="btn primary ddTrigger">Dropdown button</button>
-                            <div class="ddmenu">
-                                <a class="ddmItem" href="#">Link 1</a>
-                                <a class="ddmItem" href="#">Link 2</a>
-                                <a class="ddmItem" href="#">Link 3</a>
+                        <div class="accordionGroup">
+                            <div class="accordion show">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 1</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 2</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 3</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Accordion Collape</h4>
+                        <div class="accordionGroup collapse">
+                            <div class="accordion show">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 1</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 2</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 3</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
                             </div>
                         </div>
 
@@ -151,8 +197,8 @@
                         </div>
 
                         <div class="p4000 flex flexJustifyBetween">
-                            <a href="pagination.html" class="">Previous</a>
-                            <a href="collapse.html" class="">Next</a>
+                            <a href="cards.html" class="">Previous</a>
+                            <a href="buttons.html" class="">Next</a>
                         </div>
                     </div>
                 </div>
