@@ -68,6 +68,7 @@ img{max-width: 100%;display: inline-block;}
 .noMarginBtm{margin-bottom: 0 !important;}
 .noMarginTop{margin-top: 0 !important;}
 .row{ display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.noScroll{height: 100%; width: 100%; overflow: hidden !important; position: relative;}
 /*GENERAL-CSS*/
 
 /*UTILITY-CLASSES*/
@@ -182,8 +183,8 @@ h6{font-size: 21px;font-weight: 300;}
 input, select, textarea, button, label{font-family: 'interregular';}
 p{margin: 0;padding: 0;}
 .txtHighlight{display: inline-block;padding: 0 15px;background-color: #0024ff;color: #FFF;margin-top: 15px;}
-.pg1{font-size: 16px;line-height: 26px;}
-.pg2{font-size: 14px;line-height: 26px;}
+.pg1{font-size: 16px;line-height: 20px;}
+.pg2{font-size: 14px;line-height: 20px;}
 .pg3{font-size: 13px;}
 .pg4{font-size: 24px;font-family: 'AvenirLTPro-Medium';line-height: 36px;}
 .pg5{font-size: 19px;font-family: 'AvenirLTPro-Medium';line-height: 35px;}
@@ -343,3 +344,28 @@ button:hover, .btn:hover{background-color: #d2d1d1;}
 .accordionGroup .accordion:last-child{border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
 .accordionGroup.collapse{display: block;}
 /*ACCORDION*/
+
+/*MODAL*/
+.modal{display: none;position: fixed; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); z-index: 99999;}
+.modal .modalBox{position: absolute; left: 0; right: 0; top: 20vh; transform: scale(0.3); background: #FFF; max-width: 360px; margin: auto; border-radius: 4px; overflow: hidden; transition: all .4s; -webkit-transition: all .4s;}
+.modal.lg .modalBox{max-width: 768px;}
+.modal.fullScreen .modalBox{max-width: 100%;border-radius: 0;top: 0;height: 100%;}
+.modal.fullScreen .modalBox .mbHead{position: fixed; width: 100%;}
+.modal.fullScreen .modalBox .mbBody{top: 45px; height: calc(100vh - 120px);overflow: auto;}
+.modal.fullScreen .modalBox .mbFooter{position: fixed;width: 100%;bottom: 0;}
+.modal.fullScreen.mob .modalBox{max-width: 768px;}
+.modal.mbOpen{display: block;}
+.modal.mbOpen .modalBox{transform: scale(1);}
+.modal .modalBox .mbHead{position: relative;padding: 10px;border-bottom: 1px solid #dee2e6; display: flex; align-items: center; justify-content: space-between;}
+.modal .modalBox .mbTitle{font-size: 20px;}
+.modal .modalBox .close{cursor: pointer;font-size: 20px;}
+.modal .modalBox .mbBody{position: relative;padding: 15px 10px;}
+.modal .modalBox .mbFooter{position: relative;padding: 10px;border-top: 1px solid #dee2e6; display: flex; align-items: center; justify-content: space-between;}
+@media only screen and (max-width: 768px) {
+    .modal.lg .modalBox{max-width: 100%;margin-left: 5%;margin-right: 5%;}
+}
+@media only screen and (max-width: 360px) {
+    .modal .modalBox{max-width: 100%;margin-left: 5%;margin-right: 5%;}
+    .modal.fullScreen .modalBox{margin-left: 0;margin-right: 0;}
+}
+/*MODAL*/

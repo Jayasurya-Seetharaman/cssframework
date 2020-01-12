@@ -71,4 +71,23 @@ $(document).ready(function () {
         }
     });
     /*ACCORDION*/
+
+    /*MODAL*/
+    $(".modaltrigger").click(function () {
+        var targetId = $(this).data("target");
+        if ($(targetId).hasClass("fullScreen")) {
+            $('body').addClass('noScroll');
+        }
+        $(targetId).fadeIn();
+        $(targetId).toggleClass("mbOpen");
+    });
+    $(".modal [data-close='modal']").click(function () {
+        if ($(this).closest(".modal").hasClass("fullScreen")) {
+            $('body').removeClass('noScroll');
+        }
+        $(this).closest(".modal").removeClass("mbOpen");
+        $(this).closest(".modal").fadeOut();
+    });
+    /*MODAL*/
+
 });

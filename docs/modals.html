@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Modals</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/uttilities.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="../index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="" class="snmDDHead">Basic</a>
+                            <div class="snmBody">
+                                <a href="tables.html" class="snmDDItem">Tables</a>
+                                <a href="images.html" class="snmDDItem">Images</a>
+                                <a href="alerts.html" class="snmDDItem">Alerts</a>
+                                <a href="" class="snmDDItem">Buttons</a>
+                            </div>
+                        </li>
+                        <li class="snMenuDD">
+                            <a href="" class="snmDDHead">Component</a>
+                            <div class="snmBody">
+                                <a href="" class="snmDDItem">Tables</a>
+                                <a href="" class="snmDDItem">Images</a>
+                                <a href="" class="snmDDItem">Alerts</a>
+                                <a href="" class="snmDDItem">Buttons</a>
+                            </div>
+                        </li>
+                        <li class="snMenuDD">
+                            <a href="" class="snmDDHead">Layout</a>
+                            <div class="snmBody">
+                                <a href="" class="snmDDItem">Tables</a>
+                                <a href="" class="snmDDItem">Images</a>
+                                <a href="" class="snmDDItem">Alerts</a>
+                                <a href="" class="snmDDItem">Buttons</a>
+                            </div>
+                        </li>
+                        <li class="snMenuDD">
+                            <a href="" class="snmDDHead">Other</a>
+                            <div class="snmBody">
+                                <a href="" class="snmDDItem">Tables</a>
+                                <a href="" class="snmDDItem">Images</a>
+                                <a href="" class="snmDDItem">Alerts</a>
+                                <a href="" class="snmDDItem">Buttons</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="w600">
+                        <h1>Modals</h1>
+                        <h4 class="p2020">Default Modal</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo1">Show</button>
+                        <div class="modal" id="demo1">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Large Modal</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo2">Show</button>
+                        <div class="modal lg" id="demo2">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Full screen Modal</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo3">Show</button>
+                        <div class="modal fullScreen" id="demo3">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Full screen Modal - Mobile</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo4">Show</button>
+                        <div class="modal fullScreen mob" id="demo4">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="collapse.html" class="">Previous</a>
+                            <a href="buttons.html" class="">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
