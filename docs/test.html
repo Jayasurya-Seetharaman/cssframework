@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>target-div</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- 1. Define some markup -->
+    <div>
+        <code>
+            &lt;div class="modal" id="demo1"&gt;
+                &lt;div class="modalBox"&gt;
+                    &lt;div class="mbHead"&gt;
+                        &lt;div class="mbTitle"&gt;Modal Title&lt;/div&gt;
+                        &lt;div class="close" data-close="modal"&gt;&times;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="mbBody"&gt;
+                        ...
+                    &lt;/div&gt;
+                    &lt;div class="mbFooter"&gt;
+                        &lt;button type="button" class="btn danger" data-close="modal"&gt;Close&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </div>
+    <button class="btn" data-clipboard-action="copy">Copy</button>
+
+    <!-- 2. Include library -->
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard -->
+    <script>
+        new Clipboard('.btn', {
+            text: function () {
+                var htmlBlock = document.querySelector('code');
+                var res = htmlBlock.innerHTML;
+                res = res.replace(/&lt;/g, '<');
+                res = res.replace(/&gt;/g, '>');
+                return res;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
