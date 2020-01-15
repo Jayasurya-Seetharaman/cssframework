@@ -13,7 +13,7 @@ header{background: #2b5876;padding: 40px 0;}
 .snippet{position: relative;padding: 15px;background-color: #e3e4e4;border-radius: 4px;margin-bottom: 15px;}
 .snippet .copyClipboard{position: absolute;right: 15px;top: 15px;}
 .snippet .copyClipboard:hover{background-color: #4da1de;color: #FFF;}
-.snippet pre{padding: 0;margin:0;background-color: transparent;border:none;}
+.snippet pre{padding: 0;margin:0;background-color: transparent;border:none; overflow-x: auto; max-width: 950px; width: 100%;}
 .snippet pre code{color: #000;cursor: text;}
 /*SNIPPET*/
 
