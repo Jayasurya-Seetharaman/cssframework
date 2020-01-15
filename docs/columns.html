@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LightCss | Columns & Grid</title>
+    <title>LightCss | Grids</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
@@ -34,7 +34,7 @@
         </header>
 
         <div class="container1180 pagePad p4040">
-            <div class="flex">
+            <div class="flexR768">
                 <div class="flex1">
                     <ul class="sideNav">
                         <li class="snMenuDD">
@@ -76,91 +76,386 @@
                     </ul>
                 </div>
                 <div class="flex4">
-                    <div class="w600">
-                        <h1>Columns</h1>
-                        <h4 class="p2020">Default Modal</h4>
-                        <button class="btn primary modaltrigger" data-target="#demo1">Show</button>
-                        <div class="modal" id="demo1">
-                            <div class="modalBox">
-                                <div class="mbHead">
-                                    <div class="mbTitle">Modal Title</div>
-                                    <div class="close" data-close="modal">&times;</div>
-                                </div>
-                                <div class="mbBody">
-                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim
-                                        veniam.</p>
-                                </div>
-                                <div class="mbFooter">
-                                    <button type="button" class="btn danger" data-close="modal">Close</button>
-                                </div>
-                            </div>
+                    <div class="">
+                        <h1>Grids</h1>
+                        <h4 class="p2020">One Column</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
                         </div>
 
-                        <h4 class="p2020">Large Modal</h4>
-                        <button class="btn primary modaltrigger" data-target="#demo2">Show</button>
-                        <div class="modal lg" id="demo2">
-                            <div class="modalBox">
-                                <div class="mbHead">
-                                    <div class="mbTitle">Modal Title</div>
-                                    <div class="close" data-close="modal">&times;</div>
-                                </div>
-                                <div class="mbBody">
-                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim
-                                        veniam.</p>
-                                </div>
-                                <div class="mbFooter">
-                                    <button type="button" class="btn danger" data-close="modal">Close</button>
-                                </div>
-                            </div>
+                        <h4 class="p2020">Two Equal Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
                         </div>
 
-                        <h4 class="p2020">Full screen Modal</h4>
-                        <button class="btn primary modaltrigger" data-target="#demo3">Show</button>
-                        <div class="modal fullScreen" id="demo3">
-                            <div class="modalBox">
-                                <div class="mbHead">
-                                    <div class="mbTitle">Modal Title</div>
-                                    <div class="close" data-close="modal">&times;</div>
-                                </div>
-                                <div class="mbBody">
-                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim
-                                        veniam.</p>
-                                </div>
-                                <div class="mbFooter">
-                                    <button type="button" class="btn danger" data-close="modal">Close</button>
-                                </div>
-                            </div>
+                        <h4 class="p2020">Three Equal Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
                         </div>
 
-                        <h4 class="p2020">Full screen Modal - Mobile</h4>
-                        <button class="btn primary modaltrigger" data-target="#demo4">Show</button>
-                        <div class="modal fullScreen mob" id="demo4">
-                            <div class="modalBox">
-                                <div class="mbHead">
-                                    <div class="mbTitle">Modal Title</div>
-                                    <div class="close" data-close="modal">&times;</div>
+                        <h4 class="p2020">Four Equal Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">12 Equal Columns</h4>
+                        <div class="flex flexWrap gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">3:4 Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex3">Flex 3</div>
+                            <div class="flex4">Flex 4</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+    &lt;div class="flex4"&gt;Flex 4&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">1:3 Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex3">Flex 3</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">1:4 Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex4">Flex 4</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex4"&gt;Flex 4&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">1:3:1 Columns</h4>
+                        <div class="flex gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex3">Flex 3</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flex"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Responsive Columns - 991px</h4>
+                        <div class="flexR991 gridExampleR991">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR991"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Responsive Unequal Columns - 768px</h4>
+                        <div class="flexR768 gridExampleR768">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex3">Flex 3</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR768"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Responsive Columns - 576px</h4>
+                        <div class="flexR576 gridExampleR576">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR576"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Responsive Columns - 360px</h4>
+                        <div class="flexR360 gridExampleR360">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR360"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Mobile Columns - 576px</h4>
+                        <div class="flexM576 gridExampleM576">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexM576"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Mobile Columns - 768px</h4>
+                        <div class="flexM768 gridExampleM768">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexM768"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Nested Columns</h4>
+                        <div class="flexR768 gridExampleR768">
+                            <div class="flex1">
+                                <p class="mb5">Flex 1</p>
+                                <div class="flex gridExample noBorder noPad">
+                                    <div class="flex1">Flex 1</div>
+                                    <div class="flex1">Flex 1</div>
                                 </div>
-                                <div class="mbBody">
-                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim
-                                        veniam.</p>
-                                </div>
-                                <div class="mbFooter">
-                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                            </div>
+                            <div class="flex1">
+                                <p class="mb5">Flex 1</p>
+                                <div class="flex gridExample noBorder noPad">
+                                    <div class="flex1">Flex 1</div>
+                                    <div class="flex3">Flex 3</div>
                                 </div>
                             </div>
                         </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR768"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p class="mb5"&gt;Flex 1&lt;/p&gt;
+        &lt;div class="flex"&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p class="mb5"&gt;Flex 1&lt;/p&gt;
+        &lt;div class="flex"&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+            &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Nested Responsive Columns</h4>
+                        <div class="flexR768 gridExampleR768">
+                            <div class="flex1">
+                                <p class="mb5">Flex 1</p>
+                                <div class="flexM768 gridExampleM768 noBorder noPad">
+                                    <div class="flex1">Flex 1</div>
+                                    <div class="flex1">Flex 1</div>
+                                </div>
+                            </div>
+                            <div class="flex1">
+                                <p class="mb5">Flex 1</p>
+                                <div class="flexM576 gridExampleM576 noBorder noPad">
+                                    <div class="flex1">Flex 1</div>
+                                    <div class="flex3">Flex 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR768"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p class="mb5"&gt;Flex 1&lt;/p&gt;
+        &lt;div class="flexM768"&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p class="mb5"&gt;Flex 1&lt;/p&gt;
+        &lt;div class="flexM576"&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+            &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Space Between Columns</h4>
+                        <div class="flexR768 gridExampleR768">
+                            <div class="flex1">
+                                <p class="mb5">Flex 1</p>
+                                <div class="flexR768 gridExampleR768 noBorder noPad">
+                                    <div class="flex1">Flex 1</div>
+                                    <div class="flexGap1"></div>
+                                    <div class="flex1">Flex 1</div>
+                                </div>
+                            </div>
+                            <div class="flexGap2"></div>
+                            <div class="flex1">
+                                <p class="mb5">Flex 1</p>
+                                <div class="flexR576 gridExampleR576 noBorder noPad">
+                                    <div class="flex1">Flex 1</div>
+                                    <div class="flexGap1 p2000"></div>
+                                    <div class="flex3">Flex 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snippet mt20">
+                            <pre><code>
+&lt;div class="flexR768"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p class="mb5"&gt;Flex 1&lt;/p&gt;
+        &lt;div class="flexR768"&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+            &lt;div class="flexGap1"&gt;&lt;/div&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="flexGap2"&gt;&lt;/div&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p class="mb5"&gt;Flex 1&lt;/p&gt;
+        &lt;div class="flexR576"&gt;
+            &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+            &lt;div class="flexGap1 p2000"&gt;&lt;/div&gt;
+            &lt;div class="flex3"&gt;Flex 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
 
                         <div class="p4000 flex flexJustifyBetween">
-                            <a href="modals.html" class="">Previous</a>
-                            <a href="" class="">Next</a>
+                            <a href="collapse.html" class="">Previous</a>
+                            <a href="columns.html" class="">Next</a>
                         </div>
                     </div>
                 </div>
@@ -171,6 +466,7 @@
     </div>
 
     <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
 
 </body>
 

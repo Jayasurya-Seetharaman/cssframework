@@ -10,6 +10,7 @@
 <body>
     <!-- 1. Define some markup -->
     <div>
+        <button class="btn" id="btn" data-clipboard-action="copy">Copy</button>
         <code>
             &lt;div class="modal" id="demo1"&gt;
                 &lt;div class="modalBox"&gt;
@@ -27,17 +28,24 @@
             &lt;/div&gt;
         </code>
     </div>
-    <button class="btn" data-clipboard-action="copy">Copy</button>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- 2. Include library -->
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
 
     <!-- 3. Instantiate clipboard -->
     <script>
+
+        var htmlB = '';
+        $(".btn").click(function () {
+            htmlB = $(this).siblings("code").get(0);
+            console.log('B: ' + htmlB);
+            console.log('Block: ' + htmlB.innerHTML);
+        });
         new Clipboard('.btn', {
             text: function () {
-                var htmlBlock = document.querySelector('code');
-                var res = htmlBlock.innerHTML;
+                // var htmlBlock = document.querySelector('code');
+                // console.log('html: ' + htmlBlock);
+                var res = htmlB.innerHTML;
                 res = res.replace(/&lt;/g, '<');
                 res = res.replace(/&gt;/g, '>');
                 return res;

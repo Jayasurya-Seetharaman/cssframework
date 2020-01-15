@@ -69,6 +69,7 @@ img{max-width: 100%;display: inline-block;}
 .noMarginTop{margin-top: 0 !important;}
 .row{ display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
 .noScroll{height: 100%; width: 100%; overflow: hidden !important; position: relative;}
+.noPad{padding: 0 !important;}
 /*GENERAL-CSS*/
 
 /*UTILITY-CLASSES*/
@@ -76,8 +77,8 @@ img{max-width: 100%;display: inline-block;}
 
 /*FLEX*/
 .flex { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
-.flexR1024, .flexR1080, .flexR991, .flexR840, .flexR768, .flexR680, .flexR660, .flexR580, .flexR520, .flexR480, .flexR420 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
-.flexM991, .flexM840{display: block;}
+.flexR1024, .flexR1080, .flexR991, .flexR840, .flexR768, .flexR680, .flexR660, .flexR576, .flexR520, .flexR480, .flexR420, .flexR360 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.flexM991, .flexM768, .flexM576, .flexM360{display: block;}
 .flex1 { flex: 1; }
 .flex2 { flex: 2; }
 .flex3 { flex: 3; }

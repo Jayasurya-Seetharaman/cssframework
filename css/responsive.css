@@ -95,8 +95,9 @@
 @media only screen and (max-width: 660px) {        
     .flexR660 { display: block; }
 }
-@media only screen and (max-width: 580px) {
-    .flexResponsive580 { display: block; }
+@media only screen and (max-width: 576px) {
+    .flexR576 { display: block; }
+    .flexM576{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
     .desktop580{display: none;}
     .mobile580{display: block;}
     nav .mbLeft{padding: 75px 30px 50px;}
@@ -115,5 +116,7 @@
     .flexR420{display: block;}
 }
 @media only screen and (max-width: 380px) {}
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 360px) {
+    .flexR360{display: block;}
+    .flexM360{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
 }

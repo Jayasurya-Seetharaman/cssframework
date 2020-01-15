@@ -91,37 +91,51 @@ $(document).ready(function () {
     /*MODAL*/
 
     /*COPY-CLIPBOARD*/
+    // $(".copyClipboard").click(function () {
+
+    //     // console.log($(this).closest(".snippet").data("clipboard"));
+    //     // var Text = $(this).closest(".snippet").data("clipboard");
+
+    //     // var Text = $(this).closest(".snippet").find("code").html();
+    //     // $(this).closest(".snippet").find("code").clone().appendTo(".DemoCode");
+    //     // console.log(Text);
+
+    //     var aux = document.createElement("input");
+
+    //     // var ipValue = document.getElementById("snippet").innerHTML;
+    //     var ipValue = $(this).closest(".snippet").find("code").html();
+    //     ipValue.toString();
+    //     ipValue = ipValue.replace(/&lt;/g, '<');
+    //     ipValue = ipValue.replace(/&gt;/g, '>');
+    //     ipValue = ipValue.replace(/ /g, '\xa0');
+
+    //     aux.setAttribute("value", ipValue);
+
+    //     // Append the aux input to the body
+    //     document.body.appendChild(aux);
+
+    //     // Highlight the content
+    //     aux.select();
+
+    //     // Execute the copy command
+    //     document.execCommand("copy");
+
+    //     // Remove the input from the body
+    //     document.body.removeChild(aux);
+    // });
+    var copyCode = '';
     $(".copyClipboard").click(function () {
-
-        // console.log($(this).closest(".snippet").data("clipboard"));
-        // var Text = $(this).closest(".snippet").data("clipboard");
-
-        // var Text = $(this).closest(".snippet").find("code").html();
-        // $(this).closest(".snippet").find("code").clone().appendTo(".DemoCode");
-        // console.log(Text);
-
-        var aux = document.createElement("input");
-
-        // var ipValue = document.getElementById("snippet").innerHTML;
-        var ipValue = $(this).closest(".snippet").find("code").html();
-        ipValue.toString();
-        ipValue = ipValue.replace(/&lt;/g, '<');
-        ipValue = ipValue.replace(/&gt;/g, '>');
-        ipValue = ipValue.replace(/ /g, '\xa0');
-
-        aux.setAttribute("value", ipValue);
-
-        // Append the aux input to the body
-        document.body.appendChild(aux);
-
-        // Highlight the content
-        aux.select();
-
-        // Execute the copy command
-        document.execCommand("copy");
-
-        // Remove the input from the body
-        document.body.removeChild(aux);
+        copyCode = $(this).closest(".snippet").find("code").get(0);
+        console.log('B: ' + copyCode);
+        console.log('Block: ' + copyCode.innerHTML);
+    });
+    new Clipboard('.copyClipboard', {
+        text: function () {
+            var res = copyCode.innerHTML;
+            res = res.replace(/&lt;/g, '<');
+            res = res.replace(/&gt;/g, '>');
+            return res;
+        }
     });
     /*COPY-CLIPBOARD*/
 

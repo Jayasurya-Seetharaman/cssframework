@@ -16,3 +16,39 @@ header{background: #2b5876;padding: 40px 0;}
 .snippet pre{padding: 0;margin:0;background-color: transparent;border:none;}
 .snippet pre code{color: #000;cursor: text;}
 /*SNIPPET*/
+
+/*GRIDEXAMPLE*/
+.gridExample [class*="flex"],
+.gridExampleR991 [class*="flex"],
+.gridExampleR768 [class*="flex"],
+.gridExampleR576 [class*="flex"],
+.gridExampleR360 [class*="flex"],
+.gridExampleM576 [class*="flex"],
+.gridExampleM768 [class*="flex"]
+    {padding: 15px; border: 1px solid #000;}
+.gridExample [class*="flex"]+[class*="flex"],
+.gridExampleR768 [class*="flex"]+[class*="flex"],
+.gridExampleR991 [class*="flex"]+[class*="flex"],
+.gridExampleR576 [class*="flex"]+[class*="flex"],
+.gridExampleR360 [class*="flex"]+[class*="flex"]
+    {margin-left: -1px;}
+.gridExampleM576 [class*="flex"]+[class*="flex"],
+.gridExampleM768 [class*="flex"]+[class*="flex"]
+    {margin-left: 0;margin-top: -1px;}
+@media only screen and (max-width: 991px) {
+    .gridExampleR991 [class*="flex"]+[class*="flex"]{margin-left: 0;margin-top: -1px;}
+}
+@media only screen and (max-width: 768px) {
+    .gridExampleR768 [class*="flex"]+[class*="flex"]{margin-left: 0;margin-top: -1px;}
+    .gridExampleM768 [class*="flex"]+[class*="flex"]{margin-left: -1px;margin-top: 0;}
+    .gridExample [class*="flex"]+[class*="flex"]{margin-left: -1px;margin-top: 0;}
+}
+@media only screen and (max-width: 576px) {
+    .gridExampleR576 [class*="flex"]+[class*="flex"]{margin-left: 0;margin-top: -1px;}
+    .gridExampleM576 [class*="flex"]+[class*="flex"]{margin-left: -1px;margin-top: 0;}
+}
+@media only screen and (max-width: 360px) {
+    .gridExampleR360 [class*="flex"]+[class*="flex"]{margin-left: 0;margin-top: -1px;}
+}
+[class*="flexGap"] {border: none !important;margin-left: 0 !important;}
+/*GRIDEXAMPLE*/
