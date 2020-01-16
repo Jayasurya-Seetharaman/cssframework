@@ -391,3 +391,14 @@ button:hover, .btn:hover{background-color: #d2d1d1;}
 .form .formCheckBox input:checked + label:before{content:'\f00c';color: #fff;font-size: 9px;line-height: 13px;text-align: center; font-family: "Font Awesome 5 Free";font-weight: 900;border: 1px solid #32c5ff; background-color: #32c5ff;}
 .form .formCheckBox.formCheckInline{ display: inline-block; margin-right: 5px;}
 /*CHECKBOX*/
+
+/*RADIO-BUTTON*/
+.formRadio label{cursor: pointer;font-size: 16px;padding-left: 30px;}
+.formRadio .item{position: relative;margin-bottom: 14px;}
+.formRadio input{opacity: 0;cursor: pointer;position: absolute;left: 0;top: 0;}
+.formRadio label span.irBold{font-weight: 700;}
+.formRadio label span.rCirlce{position: absolute; left: 0; top: 0; height: 20px; width: 20px; border-radius: 100%; border: 2px solid #bfbbbb; -webkit-transition: .3s; transition: .3s;}
+.formRadio input:checked + label span.rCirlce{border-color: #e15b6c;}
+.formRadio input:checked + label span.rCirlce:before{content: ""; background: #e15b6c; height: 8px; width: 8px; position: absolute; border-radius: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
+.formRadio.formRadioInline .item{display: inline-block;margin-right: 5px;}
+/*RADIO-BUTTON*/

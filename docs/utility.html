@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LightCss | Forms</title>
+    <title>LightCss | Utility Classes</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
@@ -79,32 +79,137 @@
                 </div>
                 <div class="flex4">
                     <div class="">
-                        <h1>Forms</h1>
-                        <h4 class="p2020">Basic</h4>
-                        <form class="form w450">
-                            <div class="formGroup">
-                                <label for="email">Email address:</label>
-                                <input type="email" class="formField" id="email" />
-                            </div>
-                            <div class="formGroup">
-                                <label for="password">Password:</label>
-                                <input type="password" class="formField" id="password" />
-                            </div>
-                            <button type="submit" class="btn primary">Submit</button>
-                        </form>
-                        <div class="snippet mt20">
+                        <h1>Utility Classes</h1>
+                        <h4 class="p2020">Available classes for Padding</h4>
+                        <div class="snippet">
                             <pre><code>
-&lt;form class="form"&gt;
-    &lt;div class="formGroup"&gt;
-        &lt;label for="email"&gt;Email address:&lt;/label&gt;
-        &lt;input type="email" class="formField" id="email" /&gt;
-    &lt;/div&gt;
-    &lt;div class="formGroup"&gt;
-        &lt;label for="password"&gt;Password:&lt;/label&gt;
-        &lt;input type="password" class="formField" id="password" /&gt;
-    &lt;/div&gt;
-    &lt;button type="submit" class="btn primary"&gt;Submit&lt;/button&gt;
-&lt;/form&gt;</code>
+&lt;!-- p indicates padding --&gt;
+&lt;div class="p0"&gt;&lt;/div&gt;
+&lt;div class="p5"&gt;&lt;/div&gt;
+&lt;div class="p10"&gt;&lt;/div&gt;
+&lt;div class="p15"&gt;&lt;/div&gt;
+&lt;div class="p20"&gt;&lt;/div&gt;
+&lt;div class="p25"&gt;&lt;/div&gt;
+&lt;div class="p30"&gt;&lt;/div&gt;
+
+&lt;!-- pr indicates padding-right --&gt;
+&lt;div class="pr5"&gt;&lt;/div&gt;
+&lt;div class="pr10"&gt;&lt;/div&gt;
+&lt;div class="pr15"&gt;&lt;/div&gt;
+&lt;div class="pr20"&gt;&lt;/div&gt;
+&lt;div class="pr50"&gt;&lt;/div&gt;
+
+&lt;!-- pl indicates padding-left --&gt;
+&lt;div class="pl5"&gt;&lt;/div&gt;
+&lt;div class="pl10"&gt;&lt;/div&gt;
+&lt;div class="pl15"&gt;&lt;/div&gt;
+&lt;div class="pl20"&gt;&lt;/div&gt;
+&lt;div class="pl50"&gt;&lt;/div&gt;
+
+&lt;!-- pt indicates padding-top --&gt;
+&lt;div class="pt5"&gt;&lt;/div&gt;
+&lt;div class="pt10"&gt;&lt;/div&gt;
+&lt;div class="pt15"&gt;&lt;/div&gt;
+&lt;div class="pt20"&gt;&lt;/div&gt;
+&lt;div class="pt50"&gt;&lt;/div&gt;
+
+&lt;!-- pb indicates padding-bottom --&gt;
+&lt;div class="pb5"&gt;&lt;/div&gt;
+&lt;div class="pb10"&gt;&lt;/div&gt;
+&lt;div class="pb15"&gt;&lt;/div&gt;
+&lt;div class="pb20"&gt;&lt;/div&gt;
+&lt;div class="pb50"&gt;&lt;/div&gt;
+
+&lt;div class="p0020"&gt;&lt;/div&gt;  &lt;!-- p0020 indicates padding-top:00px;padding-bottom:20px --&gt;
+&lt;div class="p2000"&gt;&lt;/div&gt;  &lt;!-- p2000 indicates padding-top:20px;padding-bottom:00px --&gt;
+&lt;div class="p2020"&gt;&lt;/div&gt;  &lt;!-- p2020 indicates padding-top:20px;padding-bottom:20px --&gt;
+&lt;div class="p2040"&gt;&lt;/div&gt;  &lt;!-- p2040 indicates padding-top:20px;padding-bottom:40px --&gt;
+
+&lt;div class="p0030"&gt;&lt;/div&gt;  &lt;!-- p0030 indicates padding-top:00px;padding-bottom:30px --&gt;
+&lt;div class="p3000"&gt;&lt;/div&gt;  &lt;!-- p3000 indicates padding-top:30px;padding-bottom:00px --&gt;
+&lt;div class="p3030"&gt;&lt;/div&gt;  &lt;!-- p3030 indicates padding-top:30px;padding-bottom:30px --&gt;
+&lt;div class="p3060"&gt;&lt;/div&gt;  &lt;!-- p3060 indicates padding-top:30px;padding-bottom:60px --&gt;
+&lt;div class="p3090"&gt;&lt;/div&gt;  &lt;!-- p3090 indicates padding-top:30px;padding-bottom:90px --&gt;
+
+&lt;div class="p0040"&gt;&lt;/div&gt;  &lt;!-- p0040 indicates padding-top:00px;padding-bottom:40px --&gt;
+&lt;div class="p4000"&gt;&lt;/div&gt;  &lt;!-- p4000 indicates padding-top:40px;padding-bottom:00px --&gt;
+&lt;div class="p4020"&gt;&lt;/div&gt;  &lt;!-- p4020 indicates padding-top:40px;padding-bottom:20px --&gt;
+&lt;div class="p4040"&gt;&lt;/div&gt;  &lt;!-- p4040 indicates padding-top:40px;padding-bottom:40px --&gt;
+
+&lt;div class="p0060"&gt;&lt;/div&gt;  &lt;!-- p0060 indicates padding-top:00px;padding-bottom:60px --&gt;
+&lt;div class="p6000"&gt;&lt;/div&gt;  &lt;!-- p6000 indicates padding-top:60px;padding-bottom:00px --&gt;
+&lt;div class="p6030"&gt;&lt;/div&gt;  &lt;!-- p6030 indicates padding-top:60px;padding-bottom:30px --&gt;
+&lt;div class="p6060"&gt;&lt;/div&gt;  &lt;!-- p6060 indicates padding-top:60px;padding-bottom:60px --&gt;
+&lt;div class="p6090"&gt;&lt;/div&gt;  &lt;!-- p6090 indicates padding-top:60px;padding-bottom:90px --&gt;
+
+&lt;div class="p0090"&gt;&lt;/div&gt;  &lt;!-- p0090 indicates padding-top:00px;padding-bottom:90px --&gt;
+&lt;div class="p9000"&gt;&lt;/div&gt;  &lt;!-- p9000 indicates padding-top:90px;padding-bottom:00px --&gt;
+&lt;div class="p9060"&gt;&lt;/div&gt;  &lt;!-- p9060 indicates padding-top:90px;padding-bottom:60px --&gt;
+&lt;div class="p9090"&gt;&lt;/div&gt;  &lt;!-- p9090 indicates padding-top:90px;padding-bottom:90px --&gt;
+</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+
+                        <h4 class="p2020">Available classes for Margin</h4>
+                        <div class="snippet">
+                            <pre><code>
+&lt;!-- m indicates margin --&gt;
+&lt;div class="m0"&gt;&lt;/div&gt;
+&lt;div class="m5"&gt;&lt;/div&gt;
+&lt;div class="m10"&gt;&lt;/div&gt;
+&lt;div class="m15"&gt;&lt;/div&gt;
+&lt;div class="m20"&gt;&lt;/div&gt;
+&lt;div class="m25"&gt;&lt;/div&gt;
+&lt;div class="m30"&gt;&lt;/div&gt;
+
+&lt;!-- mr indicates margin-right --&gt;
+&lt;div class="mr5"&gt;&lt;/div&gt;
+&lt;div class="mr10"&gt;&lt;/div&gt;
+&lt;div class="mr15"&gt;&lt;/div&gt;
+&lt;div class="mr20"&gt;&lt;/div&gt;
+&lt;div class="mr50"&gt;&lt;/div&gt;
+
+&lt;!-- ml indicates margin-left --&gt;
+&lt;div class="ml5"&gt;&lt;/div&gt;
+&lt;div class="ml10"&gt;&lt;/div&gt;
+&lt;div class="ml15"&gt;&lt;/div&gt;
+&lt;div class="ml20"&gt;&lt;/div&gt;
+&lt;div class="ml50"&gt;&lt;/div&gt;
+
+&lt;!-- mt indicates margin-top --&gt;
+&lt;div class="mt5"&gt;&lt;/div&gt;
+&lt;div class="mt10"&gt;&lt;/div&gt;
+&lt;div class="mt15"&gt;&lt;/div&gt;
+&lt;div class="mt20"&gt;&lt;/div&gt;
+&lt;div class="mt50"&gt;&lt;/div&gt;
+
+&lt;!-- mb indicates margin-bottom --&gt;
+&lt;div class="mb5"&gt;&lt;/div&gt;
+&lt;div class="mb10"&gt;&lt;/div&gt;
+&lt;div class="mb15"&gt;&lt;/div&gt;
+&lt;div class="mb20"&gt;&lt;/div&gt;
+&lt;div class="mb50"&gt;&lt;/div&gt;
+
+&lt;div class="m0020"&gt;&lt;/div&gt;  &lt;!-- m0020 indicates margin-top:00px;margin-bottom:20px --&gt;
+&lt;div class="m2000"&gt;&lt;/div&gt;  &lt;!-- m2000 indicates margin-top:20px;margin-bottom:00px --&gt;
+&lt;div class="m2020"&gt;&lt;/div&gt;  &lt;!-- m2020 indicates margin-top:20px;margin-bottom:20px --&gt;
+&lt;div class="m2040"&gt;&lt;/div&gt;  &lt;!-- m2040 indicates margin-top:20px;margin-bottom:40px --&gt;
+
+&lt;div class="m3000"&gt;&lt;/div&gt;  &lt;!-- m3000 indicates margin-top:30px;margin-bottom:00px --&gt;
+&lt;div class="m0030"&gt;&lt;/div&gt;  &lt;!-- m0030 indicates margin-top:00px;margin-bottom:30px --&gt;
+&lt;div class="m3030"&gt;&lt;/div&gt;  &lt;!-- m3030 indicates margin-top:30px;margin-bottom:30px --&gt;
+&lt;div class="m3060"&gt;&lt;/div&gt;  &lt;!-- m3060 indicates margin-top:30px;margin-bottom:60px --&gt;
+
+&lt;div class="m0040"&gt;&lt;/div&gt;  &lt;!-- m0040 indicates margin-top:00px;margin-bottom:40px --&gt;
+&lt;div class="m4000"&gt;&lt;/div&gt;  &lt;!-- m4000 indicates margin-top:40px;margin-bottom:00px --&gt;
+&lt;div class="m4040"&gt;&lt;/div&gt;  &lt;!-- m4040 indicates margin-top:40px;margin-bottom:40px --&gt;
+&lt;div class="m4020"&gt;&lt;/div&gt;  &lt;!-- m4020 indicates margin-top:40px;margin-bottom:20px --&gt;
+
+&lt;div class="m0060"&gt;&lt;/div&gt;  &lt;!-- m0060 indicates margin-top:00px;margin-bottom:60px --&gt;
+&lt;div class="m6000"&gt;&lt;/div&gt;  &lt;!-- m6000 indicates margin-top:60px;margin-bottom:00px --&gt;
+&lt;div class="m6030"&gt;&lt;/div&gt;  &lt;!-- m6030 indicates margin-top:60px;margin-bottom:30px --&gt;
+&lt;div class="m6060"&gt;&lt;/div&gt;  &lt;!-- m6060 indicates margin-top:60px;margin-bottom:60px --&gt;</code>
 </pre>
                             <button type="button" class="btn small copyClipboard">Copy</button>
                         </div>
@@ -354,8 +459,7 @@
 
 
                         <div class="p4000 flex flexJustifyBetween">
-                            <a href="columns.html" class="">Previous</a>
-                            <a href="utility.html" class="">Next</a>
+                            <a href="forms.html" class="">Previous</a>
                         </div>
                     </div>
                 </div>
