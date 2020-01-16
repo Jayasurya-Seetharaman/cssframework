@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Containers</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead active">Tables</a>
+                            <a href="alerts.html" class="snmDDHead">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead">Pagination</a>
+                            <a href="cards.html" class="snmDDHead">Cards</a>
+                            <a href="modals.html" class="snmDDHead">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <h1>Table</h1>
+                    <h4 class="p2020">Basic Table</h4>
+                    <div class="snippet mb40">
+                        <code class="hide">
+&lt;table class="table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mary&lt;/td&gt;
+            &lt;td&gt;Moe&lt;/td&gt;
+            &lt;td&gt;mary@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;July&lt;/td&gt;
+            &lt;td&gt;Dooley&lt;/td&gt;
+            &lt;td&gt;july@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+                        <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span><span class="">table</span> <span class="highlightAttr">class</span><span class="bracket">="</span><span class="highlightVal">table</span><span class="bracket">"</span><span class="">&gt;</span>
+    <span class="bracket">&lt;</span>thead<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/thead<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>tbody<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/tbody<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/table<span class="bracket">&gt;</span></span></code>
+</pre>
+                        <button type="button" class="btn small copyClipboard">Copy</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="p2020">Striped Table</h4>
+                    <div class="snippet mb40">
+                        <code class="hide">
+&lt;table class="table tStriped"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mary&lt;/td&gt;
+            &lt;td&gt;Moe&lt;/td&gt;
+            &lt;td&gt;mary@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;July&lt;/td&gt;
+            &lt;td&gt;Dooley&lt;/td&gt;
+            &lt;td&gt;july@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+                        <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>table <span class="highlightAttr">class</span>="<span class="highlightVal">table tStriped</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>thead<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/thead<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>tbody<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/tbody<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/table<span class="bracket">&gt;</span></span></code>
+</pre>
+                        <button type="button" class="btn small copyClipboard">Copy</button>
+                    </div>
+                    <table class="table tStriped">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="p2020">Bordered Table</h4>
+                    <div class="snippet mb40">
+                        <code class="hide">
+&lt;table class="table tBordered"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mary&lt;/td&gt;
+            &lt;td&gt;Moe&lt;/td&gt;
+            &lt;td&gt;mary@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;July&lt;/td&gt;
+            &lt;td&gt;Dooley&lt;/td&gt;
+            &lt;td&gt;july@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+                        <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>table <span class="highlightAttr">class</span>="<span class="highlightVal">table tBordered</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>thead<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/thead<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>tbody<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/tbody<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/table<span class="bracket">&gt;</span></span></code>
+</pre>
+                        <button type="button" class="btn small copyClipboard">Copy</button>
+                    </div>
+                    <table class="table tBordered">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="p2020">Hover Table</h4>
+                    <div class="snippet mb40">
+                        <code class="hide">
+&lt;table class="table tHover"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mary&lt;/td&gt;
+            &lt;td&gt;Moe&lt;/td&gt;
+            &lt;td&gt;mary@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;July&lt;/td&gt;
+            &lt;td&gt;Dooley&lt;/td&gt;
+            &lt;td&gt;july@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+                        <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>table <span class="highlightAttr">class</span>="<span class="highlightVal">table tHover</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>thead<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/thead<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>tbody<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/tbody<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/table<span class="bracket">&gt;</span></span></code>
+</pre>
+                        <button type="button" class="btn small copyClipboard">Copy</button>
+                    </div>
+                    <table class="table tHover">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="p2020">Borderless Table</h4>
+                    <div class="snippet mb40">
+                        <code class="hide">
+&lt;table class="table tBorderless"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mary&lt;/td&gt;
+            &lt;td&gt;Moe&lt;/td&gt;
+            &lt;td&gt;mary@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;July&lt;/td&gt;
+            &lt;td&gt;Dooley&lt;/td&gt;
+            &lt;td&gt;july@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+
+                        <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>table <span class="highlightAttr">class</span>="<span class="highlightVal">table tBorderless</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>thead<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/thead<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>tbody<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/tbody<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/table<span class="bracket">&gt;</span></span></code>
+</pre>
+                        <button type="button" class="btn small copyClipboard">Copy</button>
+                    </div>
+
+                    <table class="table tBorderless">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="p2020">Responsive Table</h4>
+                    <div class="snippet mb40">
+                        <code class="hide">
+&lt;div class="tResponsive w950"&gt;
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;July&lt;/td&gt;
+                &lt;td&gt;Dooley&lt;/td&gt;
+                &lt;td&gt;july@example.com&lt;/td&gt;
+                &lt;td&gt;July&lt;/td&gt;
+                &lt;td&gt;Dooley&lt;/td&gt;
+                &lt;td&gt;july@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code>
+
+                        <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">tResponsive w950</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>table <span class="highlightAttr">class</span>="<span class="highlightVal">table</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>thead<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Firstname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Lastname<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>th<span class="bracket">&gt;</span>Email<span class="bracket">&lt;</span>/th<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/thead<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>tbody<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Mary<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Moe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>mary@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>tr<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>July<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Dooley<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>july@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>John<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>Doe<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+                <span class="bracket">&lt;</span>td<span class="bracket">&gt;</span>john@example.com<span class="bracket">&lt;</span>/td<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>/tr<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/tbody<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/table<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                        <button type="button" class="btn small copyClipboard">Copy</button>
+                    </div>
+                    <div>
+                        <div class="tResponsive w950">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Email</th>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Email</th>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Email</th>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="p4000 textRight">
+                        <a href="alerts.html" class="">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

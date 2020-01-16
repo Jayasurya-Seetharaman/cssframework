@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Toast</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead">Tables</a>
+                            <a href="alerts.html" class="snmDDHead active">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead">Pagination</a>
+                            <a href="cards.html" class="snmDDHead">Cards</a>
+                            <a href="modals.html" class="snmDDHead">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="w600">
+                        <h1>Alerts</h1>
+                        <h4 class="p2020">LightCss Alerts</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb40">
+                            <code class="hide">
+&lt;div class="alert alertSuccess"&gt;
+    &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
+&lt;/div&gt;
+&lt;div class="alert alertInfo"&gt;
+    &lt;strong&gt;Info!&lt;/strong&gt; This alert box indicates a neutral informative change or action.
+&lt;/div&gt;
+&lt;div class="alert alertWarning"&gt;
+    &lt;strong&gt;Warning!&lt;/strong&gt; This alert box indicates a warning that might need attention.
+&lt;/div&gt;
+&lt;div class="alert alertDanger"&gt;
+    &lt;strong&gt;Danger!&lt;/strong&gt; This alert box indicates a dangerous or potentially negative
+    action.
+&lt;/div&gt;
+&lt;div class="alert alertPrimary"&gt;
+    &lt;strong&gt;Primary!&lt;/strong&gt; This alert box indicates an important action.
+&lt;/div&gt;
+&lt;div class="alert alertSecondary"&gt;
+    &lt;strong&gt;Secondary!&lt;/strong&gt; This alert box indicates a less important action.
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertSuccess</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Success!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> Indicates a successful or positive action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertInfo</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Info!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a neutral informative change or action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertWarning</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Warning!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a warning that might need attention.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertDanger</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Danger!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a dangerous or potentially negative
+    action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertPrimary</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Primary!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates an important action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertSecondary</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Secondary!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a less important action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+    </pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!-- Snippet ends-->
+                        <div class="alert alertSuccess">
+                            <strong>Success!</strong> Indicates a successful or positive action.
+                        </div>
+                        <div class="alert alertInfo">
+                            <strong>Info!</strong> This alert box indicates a neutral informative change or action.
+                        </div>
+                        <div class="alert alertWarning">
+                            <strong>Warning!</strong> This alert box indicates a warning that might need attention.
+                        </div>
+                        <div class="alert alertDanger">
+                            <strong>Danger!</strong> This alert box indicates a dangerous or potentially negative
+                            action.
+                        </div>
+                        <div class="alert alertPrimary">
+                            <strong>Primary!</strong> This alert box indicates an important action.
+                        </div>
+                        <div class="alert alertSecondary">
+                            <strong>Secondary!</strong> This alert box indicates a less important action.
+                        </div>
+
+                        <h4 class="p2020">Alert Links</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb40">
+
+                            <code class="hide">
+&lt;div class="alert alertSuccess"&gt;
+    &lt;strong&gt;Success!&lt;/strong&gt; You should &lt;a href="#" class="alertLink"&gt;read this message&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alertInfo"&gt;
+    &lt;strong&gt;Info!&lt;/strong&gt; You should &lt;a href="#" class="alertLink"&gt;read this message&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alertWarning"&gt;
+    &lt;strong&gt;Warning!&lt;/strong&gt; You should &lt;a href="#" class="alertLink"&gt;read this message&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alertDanger"&gt;
+    &lt;strong&gt;Danger!&lt;/strong&gt; You should &lt;a href="#" class="alertLink"&gt;read this message&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alertPrimary"&gt;
+    &lt;strong&gt;Primary!&lt;/strong&gt; You should &lt;a href="#" class="alertLink"&gt;read this message&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alertSecondary"&gt;
+    &lt;strong&gt;Secondary!&lt;/strong&gt; You should &lt;a href="#" class="alertLink"&gt;read this message&lt;/a&gt;.
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertSuccess</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Success!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> You should <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">alertLink</span>"<span class="bracket">&gt;</span>read this message<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertInfo</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Info!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> You should <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">alertLink</span>"<span class="bracket">&gt;</span>read this message<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertWarning</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Warning!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> You should <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">alertLink</span>"<span class="bracket">&gt;</span>read this message<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertDanger</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Danger!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> You should <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">alertLink</span>"<span class="bracket">&gt;</span>read this message<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertPrimary</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Primary!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> You should <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">alertLink</span>"<span class="bracket">&gt;</span>read this message<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertSecondary</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Secondary!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> You should <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">alertLink</span>"<span class="bracket">&gt;</span>read this message<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+    </pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <div class="alert alertSuccess">
+                            <strong>Success!</strong> You should <a href="#" class="alertLink">read this message</a>.
+                        </div>
+                        <div class="alert alertInfo">
+                            <strong>Info!</strong> You should <a href="#" class="alertLink">read this message</a>.
+                        </div>
+                        <div class="alert alertWarning">
+                            <strong>Warning!</strong> You should <a href="#" class="alertLink">read this message</a>.
+                        </div>
+                        <div class="alert alertDanger">
+                            <strong>Danger!</strong> You should <a href="#" class="alertLink">read this message</a>.
+                        </div>
+                        <div class="alert alertPrimary">
+                            <strong>Primary!</strong> You should <a href="#" class="alertLink">read this message</a>.
+                        </div>
+                        <div class="alert alertSecondary">
+                            <strong>Secondary!</strong> You should <a href="#" class="alertLink">read this message</a>.
+                        </div>
+
+                        <h4 class="p2020">Closing Alerts</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb40">
+                            <code class="hide">
+&lt;div class="alert alertSuccess alertDismiss"&gt;
+    &lt;div class="close"&gt;&times;&lt;/div&gt;
+    &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
+&lt;/div&gt;
+&lt;div class="alert alertInfo alertDismiss"&gt;
+    &lt;div class="close"&gt;&times;&lt;/div&gt;
+    &lt;strong&gt;Info!&lt;/strong&gt; This alert box indicates a neutral informative change or action.
+&lt;/div&gt;
+&lt;div class="alert alertWarning alertDismiss"&gt;
+    &lt;div class="close"&gt;&times;&lt;/div&gt;
+    &lt;strong&gt;Warning!&lt;/strong&gt; This alert box indicates a warning that might need attention.
+&lt;/div&gt;
+&lt;div class="alert alertDanger alertDismiss"&gt;
+    &lt;div class="close"&gt;&times;&lt;/div&gt;
+    &lt;strong&gt;Danger!&lt;/strong&gt; This alert box indicates a dangerous or potentially negative
+    action.
+&lt;/div&gt;
+&lt;div class="alert alertPrimary alertDismiss"&gt;
+    &lt;div class="close"&gt;&times;&lt;/div&gt;
+    &lt;strong&gt;Primary!&lt;/strong&gt; This alert box indicates an important action.
+&lt;/div&gt;
+&lt;div class="alert alertSecondary alertDismiss"&gt;
+    &lt;div class="close"&gt;&times;&lt;/div&gt;
+    &lt;strong&gt;Secondary!&lt;/strong&gt; This alert box indicates a less important action.
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertSuccess</span>"<span class="bracket">&gt;</span>
+    <span class="highlightVal"><span class="bracket">&lt;</span>div class="close"&gt;&times;&lt;/div<span class="bracket">&gt;</span></span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Success!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> Indicates a successful or positive action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertInfo</span>"<span class="bracket">&gt;</span>
+    <span class="highlightVal"><span class="bracket">&lt;</span>div class="close"&gt;&times;&lt;/div<span class="bracket">&gt;</span></span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Info!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a neutral informative change or action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertWarning</span>"<span class="bracket">&gt;</span>
+    <span class="highlightVal"><span class="bracket">&lt;</span>div class="close"&gt;&times;&lt;/div<span class="bracket">&gt;</span></span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Warning!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a warning that might need attention.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertDanger</span>"<span class="bracket">&gt;</span>
+    <span class="highlightVal"><span class="bracket">&lt;</span>div class="close"&gt;&times;&lt;/div<span class="bracket">&gt;</span></span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Danger!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a dangerous or potentially negative
+    action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertPrimary</span>"<span class="bracket">&gt;</span>
+    <span class="highlightVal"><span class="bracket">&lt;</span>div class="close"&gt;&times;&lt;/div<span class="bracket">&gt;</span></span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Primary!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates an important action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">alert alertSecondary</span>"<span class="bracket">&gt;</span>
+    <span class="highlightVal"><span class="bracket">&lt;</span>div class="close"&gt;&times;&lt;/div<span class="bracket">&gt;</span></span>
+    <span class="bracket">&lt;</span>strong<span class="bracket">&gt;</span>Secondary!<span class="bracket">&lt;</span>/strong<span class="bracket">&gt;</span> This alert box indicates a less important action.
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+    </pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <div class="alert alertSuccess alertDismiss">
+                            <div class="close">&times;</div>
+                            <strong>Success!</strong> Indicates a successful or positive action.
+                        </div>
+                        <div class="alert alertInfo alertDismiss">
+                            <div class="close">&times;</div>
+                            <strong>Info!</strong> This alert box indicates a neutral informative change or action.
+                        </div>
+                        <div class="alert alertWarning alertDismiss">
+                            <div class="close">&times;</div>
+                            <strong>Warning!</strong> This alert box indicates a warning that might need attention.
+                        </div>
+                        <div class="alert alertDanger alertDismiss">
+                            <div class="close">&times;</div>
+                            <strong>Danger!</strong> This alert box indicates a dangerous or potentially negative
+                            action.
+                        </div>
+                        <div class="alert alertPrimary alertDismiss">
+                            <div class="close">&times;</div>
+                            <strong>Primary!</strong> This alert box indicates an important action.
+                        </div>
+                        <div class="alert alertSecondary alertDismiss">
+                            <div class="close">&times;</div>
+                            <strong>Secondary!</strong> This alert box indicates a less important action.
+                        </div>
+
+                        <h4 class="p2020">Toast</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;button class="showToast1"&gt;Show Toast&lt;/button&gt;                                
+&lt;div class="toast toastJs1"&gt;
+    &lt;div class="toastHeader"&gt;
+        Toast Header
+    &lt;/div&gt;
+    &lt;div class="toastBody"&gt;
+        Some text inside the toast body
+    &lt;/div&gt;
+&lt;/div&gt;                                
+                            </code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">showToast1</span>"<span class="bracket">&gt;</span>Show Toast<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">toast toastJs1</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">toastHeader</span>"<span class="bracket">&gt;</span>
+        Toast Header
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">toastBody</span>"<span class="bracket">&gt;</span>
+        Some text inside the toast body
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+    </pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <button class="showToast1 mb15">Show Toast</button>
+                        <div class="toast toastJs1">
+                            <div class="toastHeader">
+                                Toast Header
+                            </div>
+                            <div class="toastBody">
+                                Some text inside the toast body
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Show and Hide a Toast</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;button class="showToast2"&gt;Show Toast&lt;/button&gt;                                
+&lt;div class="toast toastJs2" data-autohide="false"&gt;
+    &lt;div class="toastHeader"&gt;
+        Toast Header
+        &lt;button type="button" class="close"&gt;&times;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="toastBody"&gt;
+        Some text inside the toast body
+    &lt;/div&gt;
+&lt;/div&gt;                                
+                            </code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">showToast1</span>"<span class="bracket">&gt;</span>Show Toast<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">toast toastJs1</span>"  <span class="highlightAttr">data-autohide</span>="<span class="highlightVal">false</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">toastHeader</span>"<span class="bracket">&gt;</span>
+        Toast Header
+        &lt;button type="button" <span class="highlightAttr">class</span>="<span class="highlightVal">close</span>"&gt;&times;&lt;/button&gt;
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">toastBody</span>"<span class="bracket">&gt;</span>
+        Some text inside the toast body
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+    </pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <button class="showToast2 mb15">Show Toast</button>
+                        <div class="toast toastJs2" data-autohide="false">
+                            <div class="toastHeader">
+                                Toast Header
+                                <button type="button" class="close">&times;</button>
+                            </div>
+                            <div class="toastBody">
+                                Some text inside the toast body
+                            </div>
+                        </div>
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="tables.html" class="">Previous</a>
+                            <a href="buttons.html" class="">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

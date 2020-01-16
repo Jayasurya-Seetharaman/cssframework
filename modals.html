@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Modals</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead">Tables</a>
+                            <a href="alerts.html" class="snmDDHead">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead">Pagination</a>
+                            <a href="cards.html" class="snmDDHead">Cards</a>
+                            <a href="modals.html" class="snmDDHead active">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="">
+                        <h1>Modals</h1>
+                        <h4 class="p2020">Default Modal</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo1">Show</button>
+                        <div class="modal" id="demo1">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;button class="modaltrigger" data-target="#demo1"&gt;Show&lt;/button&gt;                                
+&lt;div class="modal" id="demo1"&gt;
+    &lt;div class="modalBox"&gt;
+        &lt;div class="mbHead"&gt;
+            &lt;div class="mbTitle"&gt;Modal Title&lt;/div&gt;
+            &lt;div class="close" data-close="modal"&gt;&times;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="mbBody"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="mbFooter"&gt;
+            &lt;button type="button" class="btn danger" data-close="modal"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">modaltrigger</span>" <span class="highlightAttr">data-target</span>="<span class="highlightVal">#demo1</span>"<span class="bracket">&gt;</span>Show<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>                                
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modal</span>" <span class="highlightAttr">id</span>="<span class="highlightVal">demo1</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modalBox</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbHead</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbTitle</span>"<span class="bracket">&gt;</span>Modal Title<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">close</span>" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>&times;<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbBody</span>"<span class="bracket">&gt;</span>
+            ...
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbFooter</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>button type="button" class="btn danger" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>Close<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Large Modal</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo2">Show</button>
+                        <div class="modal lg" id="demo2">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;button class="modaltrigger" data-target="#demo1"&gt;Show&lt;/button&gt;                                
+&lt;div class="modal lg" id="demo1"&gt;
+    &lt;div class="modalBox"&gt;
+        &lt;div class="mbHead"&gt;
+            &lt;div class="mbTitle"&gt;Modal Title&lt;/div&gt;
+            &lt;div class="close" data-close="modal"&gt;&times;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="mbBody"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="mbFooter"&gt;
+            &lt;button type="button" class="btn danger" data-close="modal"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">modaltrigger</span>" <span class="highlightAttr">data-target</span>="<span class="highlightVal">#demo1</span>"<span class="bracket">&gt;</span>Show<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>                                
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modal lg</span>" <span class="highlightAttr">id</span>="<span class="highlightVal">demo1</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modalBox</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbHead</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbTitle</span>"<span class="bracket">&gt;</span>Modal Title<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">close</span>" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>&times;<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbBody</span>"<span class="bracket">&gt;</span>
+            ...
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbFooter</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>button type="button" class="btn danger" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>Close<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Full screen Modal</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo3">Show</button>
+                        <div class="modal fullScreen" id="demo3">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;button class="modaltrigger" data-target="#demo1"&gt;Show&lt;/button&gt;                                
+&lt;div class="modal fullScreen" id="demo1"&gt;
+    &lt;div class="modalBox"&gt;
+        &lt;div class="mbHead"&gt;
+            &lt;div class="mbTitle"&gt;Modal Title&lt;/div&gt;
+            &lt;div class="close" data-close="modal"&gt;&times;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="mbBody"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="mbFooter"&gt;
+            &lt;button type="button" class="btn danger" data-close="modal"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">modaltrigger</span>" <span class="highlightAttr">data-target</span>="<span class="highlightVal">#demo1</span>"<span class="bracket">&gt;</span>Show<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>                                
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modal fullScreen</span>" <span class="highlightAttr">id</span>="<span class="highlightVal">demo1</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modalBox</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbHead</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbTitle</span>"<span class="bracket">&gt;</span>Modal Title<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">close</span>" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>&times;<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbBody</span>"<span class="bracket">&gt;</span>
+            ...
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbFooter</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>button type="button" class="btn danger" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>Close<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Full screen Modal - Mobile</h4>
+                        <button class="btn primary modaltrigger" data-target="#demo4">Show</button>
+                        <div class="modal fullScreen mob" id="demo4">
+                            <div class="modalBox">
+                                <div class="mbHead">
+                                    <div class="mbTitle">Modal Title</div>
+                                    <div class="close" data-close="modal">&times;</div>
+                                </div>
+                                <div class="mbBody">
+                                    <p class="pg1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                                <div class="mbFooter">
+                                    <button type="button" class="btn danger" data-close="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;button class="modaltrigger" data-target="#demo1"&gt;Show&lt;/button&gt;                                
+&lt;div class="modal fullScreen mob" id="demo1"&gt;
+    &lt;div class="modalBox"&gt;
+        &lt;div class="mbHead"&gt;
+            &lt;div class="mbTitle"&gt;Modal Title&lt;/div&gt;
+            &lt;div class="close" data-close="modal"&gt;&times;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="mbBody"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="mbFooter"&gt;
+            &lt;button type="button" class="btn danger" data-close="modal"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">modaltrigger</span>" <span class="highlightAttr">data-target</span>="<span class="highlightVal">#demo1</span>"<span class="bracket">&gt;</span>Show<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>                                
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modal fullScreen mob</span>" <span class="highlightAttr">id</span>="<span class="highlightVal">demo1</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">modalBox</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbHead</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbTitle</span>"<span class="bracket">&gt;</span>Modal Title<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">close</span>" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>&times;<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbBody</span>"<span class="bracket">&gt;</span>
+            ...
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mbFooter</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>button type="button" class="btn danger" <span class="highlightAttr">data-close</span>="<span class="highlightVal">modal</span>"<span class="bracket">&gt;</span>Close<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="cards.html" class="">Previous</a>
+                            <a href="columns.html" class="">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

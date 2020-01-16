@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Utility Classes</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        type='text/css'>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flexR768">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead">Tables</a>
+                            <a href="alerts.html" class="snmDDHead">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead">Pagination</a>
+                            <a href="cards.html" class="snmDDHead">Cards</a>
+                            <a href="modals.html" class="snmDDHead">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead active">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="">
+                        <h1>Utility Classes</h1>
+                        <h4 class="p2020">Available classes for Padding</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet">
+                            <code class="hide">
+&lt;!-- p indicates padding --&gt;
+&lt;div class="p0"&gt;&lt;/div&gt;
+&lt;div class="p5"&gt;&lt;/div&gt;
+&lt;div class="p10"&gt;&lt;/div&gt;
+&lt;div class="p15"&gt;&lt;/div&gt;
+&lt;div class="p20"&gt;&lt;/div&gt;
+&lt;div class="p25"&gt;&lt;/div&gt;
+&lt;div class="p30"&gt;&lt;/div&gt;
+
+&lt;!-- pr indicates padding-right --&gt;
+&lt;div class="pr5"&gt;&lt;/div&gt;
+&lt;div class="pr10"&gt;&lt;/div&gt;
+&lt;div class="pr15"&gt;&lt;/div&gt;
+&lt;div class="pr20"&gt;&lt;/div&gt;
+&lt;div class="pr50"&gt;&lt;/div&gt;
+
+&lt;!-- pl indicates padding-left --&gt;
+&lt;div class="pl5"&gt;&lt;/div&gt;
+&lt;div class="pl10"&gt;&lt;/div&gt;
+&lt;div class="pl15"&gt;&lt;/div&gt;
+&lt;div class="pl20"&gt;&lt;/div&gt;
+&lt;div class="pl50"&gt;&lt;/div&gt;
+
+&lt;!-- pt indicates padding-top --&gt;
+&lt;div class="pt5"&gt;&lt;/div&gt;
+&lt;div class="pt10"&gt;&lt;/div&gt;
+&lt;div class="pt15"&gt;&lt;/div&gt;
+&lt;div class="pt20"&gt;&lt;/div&gt;
+&lt;div class="pt50"&gt;&lt;/div&gt;
+
+&lt;!-- pb indicates padding-bottom --&gt;
+&lt;div class="pb5"&gt;&lt;/div&gt;
+&lt;div class="pb10"&gt;&lt;/div&gt;
+&lt;div class="pb15"&gt;&lt;/div&gt;
+&lt;div class="pb20"&gt;&lt;/div&gt;
+&lt;div class="pb50"&gt;&lt;/div&gt;
+
+&lt;div class="p0020"&gt;&lt;/div&gt;  &lt;!-- p0020 indicates padding-top:00px;padding-bottom:20px --&gt;
+&lt;div class="p2000"&gt;&lt;/div&gt;  &lt;!-- p2000 indicates padding-top:20px;padding-bottom:00px --&gt;
+&lt;div class="p2020"&gt;&lt;/div&gt;  &lt;!-- p2020 indicates padding-top:20px;padding-bottom:20px --&gt;
+&lt;div class="p2040"&gt;&lt;/div&gt;  &lt;!-- p2040 indicates padding-top:20px;padding-bottom:40px --&gt;
+
+&lt;div class="p0030"&gt;&lt;/div&gt;  &lt;!-- p0030 indicates padding-top:00px;padding-bottom:30px --&gt;
+&lt;div class="p3000"&gt;&lt;/div&gt;  &lt;!-- p3000 indicates padding-top:30px;padding-bottom:00px --&gt;
+&lt;div class="p3030"&gt;&lt;/div&gt;  &lt;!-- p3030 indicates padding-top:30px;padding-bottom:30px --&gt;
+&lt;div class="p3060"&gt;&lt;/div&gt;  &lt;!-- p3060 indicates padding-top:30px;padding-bottom:60px --&gt;
+&lt;div class="p3090"&gt;&lt;/div&gt;  &lt;!-- p3090 indicates padding-top:30px;padding-bottom:90px --&gt;
+
+&lt;div class="p0040"&gt;&lt;/div&gt;  &lt;!-- p0040 indicates padding-top:00px;padding-bottom:40px --&gt;
+&lt;div class="p4000"&gt;&lt;/div&gt;  &lt;!-- p4000 indicates padding-top:40px;padding-bottom:00px --&gt;
+&lt;div class="p4020"&gt;&lt;/div&gt;  &lt;!-- p4020 indicates padding-top:40px;padding-bottom:20px --&gt;
+&lt;div class="p4040"&gt;&lt;/div&gt;  &lt;!-- p4040 indicates padding-top:40px;padding-bottom:40px --&gt;
+
+&lt;div class="p0060"&gt;&lt;/div&gt;  &lt;!-- p0060 indicates padding-top:00px;padding-bottom:60px --&gt;
+&lt;div class="p6000"&gt;&lt;/div&gt;  &lt;!-- p6000 indicates padding-top:60px;padding-bottom:00px --&gt;
+&lt;div class="p6030"&gt;&lt;/div&gt;  &lt;!-- p6030 indicates padding-top:60px;padding-bottom:30px --&gt;
+&lt;div class="p6060"&gt;&lt;/div&gt;  &lt;!-- p6060 indicates padding-top:60px;padding-bottom:60px --&gt;
+&lt;div class="p6090"&gt;&lt;/div&gt;  &lt;!-- p6090 indicates padding-top:60px;padding-bottom:90px --&gt;
+
+&lt;div class="p0090"&gt;&lt;/div&gt;  &lt;!-- p0090 indicates padding-top:00px;padding-bottom:90px --&gt;
+&lt;div class="p9000"&gt;&lt;/div&gt;  &lt;!-- p9000 indicates padding-top:90px;padding-bottom:00px --&gt;
+&lt;div class="p9060"&gt;&lt;/div&gt;  &lt;!-- p9060 indicates padding-top:90px;padding-bottom:60px --&gt;
+&lt;div class="p9090"&gt;&lt;/div&gt;  &lt;!-- p9090 indicates padding-top:90px;padding-bottom:90px --&gt;
+</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>!-- p indicates padding --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p0</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p5</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p10</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p15</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p20</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p25</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p30</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>!-- pr indicates padding-right --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pr5</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pr10</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pr15</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pr20</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pr50</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>!-- pl indicates padding-left --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pl5</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pl10</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pl15</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pl20</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pl50</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>!-- pt indicates padding-top --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pt5</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pt10</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pt15</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pt20</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pt50</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>!-- pb indicates padding-bottom --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pb5</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pb10</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pb15</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pb20</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">pb50</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p0020</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p0020 indicates padding-top:00px;padding-bottom:20px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p2000</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p2000 indicates padding-top:20px;padding-bottom:00px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p2020</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p2020 indicates padding-top:20px;padding-bottom:20px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p2040</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p2040 indicates padding-top:20px;padding-bottom:40px --<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p0030</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p0030 indicates padding-top:00px;padding-bottom:30px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p3000</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p3000 indicates padding-top:30px;padding-bottom:00px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p3030</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p3030 indicates padding-top:30px;padding-bottom:30px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p3060</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p3060 indicates padding-top:30px;padding-bottom:60px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p3090</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p3090 indicates padding-top:30px;padding-bottom:90px --<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p0040</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p0040 indicates padding-top:00px;padding-bottom:40px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p4000</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p4000 indicates padding-top:40px;padding-bottom:00px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p4020</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p4020 indicates padding-top:40px;padding-bottom:20px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p4040</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p4040 indicates padding-top:40px;padding-bottom:40px --<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p0060</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p0060 indicates padding-top:00px;padding-bottom:60px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p6000</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p6000 indicates padding-top:60px;padding-bottom:00px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p6030</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p6030 indicates padding-top:60px;padding-bottom:30px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p6060</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p6060 indicates padding-top:60px;padding-bottom:60px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p6090</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p6090 indicates padding-top:60px;padding-bottom:90px --<span class="bracket">&gt;</span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p0090</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p0090 indicates padding-top:00px;padding-bottom:90px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p9000</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p9000 indicates padding-top:90px;padding-bottom:00px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p9060</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p9060 indicates padding-top:90px;padding-bottom:60px --<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">p9090</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>  <span class="bracket">&lt;</span>!-- p9090 indicates padding-top:90px;padding-bottom:90px --<span class="bracket">&gt;</span></span>
+</code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Available classes for Margin</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet">
+                            <code class="hide">
+&lt;!-- m indicates margin --&gt;
+&lt;div class="m0"&gt;&lt;/div&gt;
+&lt;div class="m5"&gt;&lt;/div&gt;
+&lt;div class="m10"&gt;&lt;/div&gt;
+&lt;div class="m15"&gt;&lt;/div&gt;
+&lt;div class="m20"&gt;&lt;/div&gt;
+&lt;div class="m25"&gt;&lt;/div&gt;
+&lt;div class="m30"&gt;&lt;/div&gt;
+
+&lt;!-- mr indicates margin-right --&gt;
+&lt;div class="mr5"&gt;&lt;/div&gt;
+&lt;div class="mr10"&gt;&lt;/div&gt;
+&lt;div class="mr15"&gt;&lt;/div&gt;
+&lt;div class="mr20"&gt;&lt;/div&gt;
+&lt;div class="mr50"&gt;&lt;/div&gt;
+
+&lt;!-- ml indicates margin-left --&gt;
+&lt;div class="ml5"&gt;&lt;/div&gt;
+&lt;div class="ml10"&gt;&lt;/div&gt;
+&lt;div class="ml15"&gt;&lt;/div&gt;
+&lt;div class="ml20"&gt;&lt;/div&gt;
+&lt;div class="ml50"&gt;&lt;/div&gt;
+
+&lt;!-- mt indicates margin-top --&gt;
+&lt;div class="mt5"&gt;&lt;/div&gt;
+&lt;div class="mt10"&gt;&lt;/div&gt;
+&lt;div class="mt15"&gt;&lt;/div&gt;
+&lt;div class="mt20"&gt;&lt;/div&gt;
+&lt;div class="mt50"&gt;&lt;/div&gt;
+
+&lt;!-- mb indicates margin-bottom --&gt;
+&lt;div class="mb5"&gt;&lt;/div&gt;
+&lt;div class="mb10"&gt;&lt;/div&gt;
+&lt;div class="mb15"&gt;&lt;/div&gt;
+&lt;div class="mb20"&gt;&lt;/div&gt;
+&lt;div class="mb50"&gt;&lt;/div&gt;
+
+&lt;div class="m0020"&gt;&lt;/div&gt;  &lt;!-- m0020 indicates margin-top:00px;margin-bottom:20px --&gt;
+&lt;div class="m2000"&gt;&lt;/div&gt;  &lt;!-- m2000 indicates margin-top:20px;margin-bottom:00px --&gt;
+&lt;div class="m2020"&gt;&lt;/div&gt;  &lt;!-- m2020 indicates margin-top:20px;margin-bottom:20px --&gt;
+&lt;div class="m2040"&gt;&lt;/div&gt;  &lt;!-- m2040 indicates margin-top:20px;margin-bottom:40px --&gt;
+
+&lt;div class="m3000"&gt;&lt;/div&gt;  &lt;!-- m3000 indicates margin-top:30px;margin-bottom:00px --&gt;
+&lt;div class="m0030"&gt;&lt;/div&gt;  &lt;!-- m0030 indicates margin-top:00px;margin-bottom:30px --&gt;
+&lt;div class="m3030"&gt;&lt;/div&gt;  &lt;!-- m3030 indicates margin-top:30px;margin-bottom:30px --&gt;
+&lt;div class="m3060"&gt;&lt;/div&gt;  &lt;!-- m3060 indicates margin-top:30px;margin-bottom:60px --&gt;
+
+&lt;div class="m0040"&gt;&lt;/div&gt;  &lt;!-- m0040 indicates margin-top:00px;margin-bottom:40px --&gt;
+&lt;div class="m4000"&gt;&lt;/div&gt;  &lt;!-- m4000 indicates margin-top:40px;margin-bottom:00px --&gt;
+&lt;div class="m4040"&gt;&lt;/div&gt;  &lt;!-- m4040 indicates margin-top:40px;margin-bottom:40px --&gt;
+&lt;div class="m4020"&gt;&lt;/div&gt;  &lt;!-- m4020 indicates margin-top:40px;margin-bottom:20px --&gt;
+
+&lt;div class="m0060"&gt;&lt;/div&gt;  &lt;!-- m0060 indicates margin-top:00px;margin-bottom:60px --&gt;
+&lt;div class="m6000"&gt;&lt;/div&gt;  &lt;!-- m6000 indicates margin-top:60px;margin-bottom:00px --&gt;
+&lt;div class="m6030"&gt;&lt;/div&gt;  &lt;!-- m6030 indicates margin-top:60px;margin-bottom:30px --&gt;
+&lt;div class="m6060"&gt;&lt;/div&gt;  &lt;!-- m6060 indicates margin-top:60px;margin-bottom:60px --&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>!-- m indicates margin --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m0</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m5</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m10</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m15</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m20</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m25</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m30</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>!-- mr indicates margin-right --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mr5</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mr10</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mr15</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mr20</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mr50</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>!-- ml indicates margin-left --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ml5</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ml10</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ml15</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ml20</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ml50</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>!-- mt indicates margin-top --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mt5</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mt10</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mt15</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mt20</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mt50</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>!-- mb indicates margin-bottom --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mb5</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mb10</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mb15</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mb20</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">mb50</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m0020</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m0020 indicates margin-top:00px;margin-bottom:20px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m2000</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m2000 indicates margin-top:20px;margin-bottom:00px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m2020</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m2020 indicates margin-top:20px;margin-bottom:20px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m2040</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m2040 indicates margin-top:20px;margin-bottom:40px --<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m3000</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m3000 indicates margin-top:30px;margin-bottom:00px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m0030</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m0030 indicates margin-top:00px;margin-bottom:30px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m3030</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m3030 indicates margin-top:30px;margin-bottom:30px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m3060</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m3060 indicates margin-top:30px;margin-bottom:60px --<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m0040</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m0040 indicates margin-top:00px;margin-bottom:40px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m4000</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m4000 indicates margin-top:40px;margin-bottom:00px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m4040</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m4040 indicates margin-top:40px;margin-bottom:40px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m4020</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m4020 indicates margin-top:40px;margin-bottom:20px --<span class="bracket"><span class="bracket">&gt;</span></span>
+
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m0060</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m0060 indicates margin-top:00px;margin-bottom:60px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m6000</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m6000 indicates margin-top:60px;margin-bottom:00px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m6030</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m6030 indicates margin-top:60px;margin-bottom:30px --<span class="bracket"><span class="bracket">&gt;</span></span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">m6060</span>"<span class="bracket"><span class="bracket">&gt;</span></span><span class="bracket">&lt;</span>/div<span class="bracket"><span class="bracket">&gt;</span></span>  <span class="bracket">&lt;</span>!-- m6060 indicates margin-top:60px;margin-bottom:60px --<span class="bracket"><span class="bracket">&gt;</span></span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Justify Content Between </h4>
+                        <div class="flex flexJustifyBetween gridExample">
+                            <button class="btn primary">Button 1</button>
+                            <button class="btn primary">Button 2</button>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexJustifyBetween"&gt;
+    &lt;button class="btn primary"&gt;Button 1&lt;/button&gt;
+    &lt;button class="btn primary"&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexJustifyBetween</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 1<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 2<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Justify Content Around </h4>
+                        <div class="flex flexJustifyAround gridExample">
+                            <button class="btn primary">Button 1</button>
+                            <button class="btn primary">Button 2</button>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexJustifyAround"&gt;
+    &lt;button class="btn primary"&gt;Button 1&lt;/button&gt;
+    &lt;button class="btn primary"&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexJustifyAround</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 1<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 2<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Justify Content Start </h4>
+                        <div class="flex flexJustifyStart gridExample">
+                            <button class="btn primary">Button 1</button>
+                            <button class="btn primary ml5">Button 2</button>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexJustifyStart"&gt;
+    &lt;button class="btn primary"&gt;Button 1&lt;/button&gt;
+    &lt;button class="btn primary"&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexJustifyStart</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 1<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 2<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Justify Content End </h4>
+                        <div class="flex flexJustifyEnd gridExample">
+                            <button class="btn primary">Button 1</button>
+                            <button class="btn primary ml5">Button 2</button>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexJustifyEnd"&gt;
+    &lt;button class="btn primary"&gt;Button 1&lt;/button&gt;
+    &lt;button class="btn primary"&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexJustifyEnd</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 1<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 2<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Justify Content Center </h4>
+                        <div class="flex flexJustifyCenter gridExample">
+                            <button class="btn primary">Button 1</button>
+                            <button class="btn primary ml5">Button 2</button>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexJustifyCenter"&gt;
+    &lt;button class="btn primary"&gt;Button 1&lt;/button&gt;
+    &lt;button class="btn primary"&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexJustifyCenter</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 1<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>button class="btn primary"<span class="bracket">&gt;</span>Button 2<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Align Items Center </h4>
+                        <div class="flex flexAlignItemsCenter gridExample">
+                            <div class="flex1">
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text
+                                    commonly used in the graphic, print, and publishing industries for previewing
+                                    layouts and visual mockups.</p>
+                            </div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexAlignItemsCenter gridExample"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexAlignItemsCenter</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Align Items Baseline </h4>
+                        <div class="flex flexAlignItemsBaseline gridExample">
+                            <div class="flex1">
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text
+                                    commonly used in the graphic, print, and publishing industries for previewing
+                                    layouts and visual mockups.</p>
+                            </div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexAlignItemsBaseline"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexAlignItemsBaseline</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Align Items Start </h4>
+                        <div class="flex flexAlignItemsStart gridExample">
+                            <div class="flex1">
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text
+                                    commonly used in the graphic, print, and publishing industries for previewing
+                                    layouts and visual mockups.</p>
+                            </div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexAlignItemsStart"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexAlignItemsStart</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Align Items End </h4>
+                        <div class="flex flexAlignItemsEnd gridExample">
+                            <div class="flex1">
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text
+                                    commonly used in the graphic, print, and publishing industries for previewing
+                                    layouts and visual mockups.</p>
+                            </div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexAlignItemsEnd"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexAlignItemsEnd</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Flex Align Items Strecth </h4>
+                        <div class="flex flexAlignItemsStretch gridExample">
+                            <div class="flex1">
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text
+                                    commonly used in the graphic, print, and publishing industries for previewing
+                                    layouts and visual mockups.</p>
+                            </div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexAlignItemsEnd"&gt;
+    &lt;div class="flex1"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexAlignItemsEnd</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">FlexWrap </h4>
+                        <div class="flex flexWrap gridExample">
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                            <div class="flex1">Flex 1</div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="flex flexWrap"&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="flex1"&gt;Flex 1&lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex flexWrap</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">flex1</span>"<span class="bracket">&gt;</span>Flex 1<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="forms.html" class="">Previous</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

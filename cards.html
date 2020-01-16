@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Cards & Dropdowns</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead">Tables</a>
+                            <a href="alerts.html" class="snmDDHead">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead">Pagination</a>
+                            <a href="cards.html" class="snmDDHead active">Cards</a>
+                            <a href="modals.html" class="snmDDHead">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="w600">
+                        <h1>Cards</h1>
+                        <h4 class="p2020">Basic Card</h4>
+                        <div class="card">
+                            <div class="cardBody">
+                                <div class="cardTitle">Card Title</div>
+                                <div class="pg1 mb10">Some example text. Some example text.</div>
+                                <a href="#" class="cardLink">Card link</a>
+                                <a href="#" class="cardLink">Another link</a>
+                            </div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="card"&gt;
+    &lt;div class="cardBody"&gt;
+        &lt;div class="cardTitle"&gt;Card Title&lt;/div&gt;
+        &lt;div class=""&gt;Some example text. Some example text.&lt;/div&gt;
+        &lt;a href="#" class="cardLink"&gt;Card link&lt;/a&gt;
+        &lt;a href="#" class="cardLink"&gt;Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">card</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">cardBody</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">cardTitle</span>"<span class="bracket">&gt;</span>Card Title<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div class="pg1 mb10"<span class="bracket">&gt;</span>Some example text. Some example text.<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">cardLink</span>"<span class="bracket">&gt;</span>Card link<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="#" <span class="highlightAttr">class</span>="<span class="highlightVal">cardLink</span>"<span class="bracket">&gt;</span>Another link<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Card with Image</h4>
+                        <div class="card">
+                            <img src="img/profile.png" class="dBlock" />
+                            <div class="cardBody">
+                                <div class="cardTitle">Card Title</div>
+                                <div class="pg1 mb10">Some example text. Some example text.</div>
+                                <a href="#" class="btn primary">Card link</a>
+                            </div>
+                        </div>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;div class="card"&gt;
+    &lt;img src="img/profile.png" class="dBlock" /&gt;
+    &lt;div class="cardBody"&gt;
+        &lt;div class="cardTitle"&gt;Card Title&lt;/div&gt;
+        &lt;div&gt;Some example text. Some example text.&lt;/div&gt;
+        &lt;a href="#" class="btn primary"&gt;Card link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">card</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>img src="img/profile.png" <span class="highlightAttr">class</span>="<span class="highlightVal">dBlock</span>" /<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">cardBody</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">cardTitle</span>"<span class="bracket">&gt;</span>Card Title<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div<span class="bracket">&gt;</span>Some example text. Some example text.<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="#" class="btn primary"<span class="bracket">&gt;</span>Card link<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="pagination.html" class="">Previous</a>
+                            <a href="modals.html" class="">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

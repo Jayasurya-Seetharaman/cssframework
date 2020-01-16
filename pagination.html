@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Toast</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead">Tables</a>
+                            <a href="alerts.html" class="snmDDHead">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead active">Pagination</a>
+                            <a href="cards.html" class="snmDDHead">Cards</a>
+                            <a href="modals.html" class="snmDDHead">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="w650">
+                        <h1>Pagination</h1>
+                        <h4 class="p2020">Basic</h4>
+                        <ul class="pagination">
+                            <li class="pgItem"><a class="pgLink" href="#">Previous</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">1</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">2</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">3</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">Next</a></li>
+                        </ul>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;ul class="pagination"&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>ul <span class="highlightAttr">class</span>="<span class="highlightVal">pagination</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Previous<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Next<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/ul<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Disable & Active</h4>
+                        <ul class="pagination">
+                            <li class="pgItem disabled"><a class="pgLink" href="#">Previous</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">1</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">2</a></li>
+                            <li class="pgItem active"><a class="pgLink" href="#">3</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">Next</a></li>
+                        </ul>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;ul class="pagination"&gt;
+    &lt;li class="pgItem disabled"&gt;&lt;a class="pgLink" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem active"&gt;&lt;a class="pgLink" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>ul <span class="highlightAttr">class</span>="<span class="highlightVal">pagination</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem disabled</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Previous<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem active</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Next<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/ul<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h4 class="p2020">Pagination Sizing</h4>
+                        <ul class="pagination small mb20">
+                            <li class="pgItem"><a class="pgLink" href="#">Previous</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">1</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">2</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">3</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">Next</a></li>
+                        </ul>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;ul class="pagination small"&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>ul <span class="highlightAttr">class</span>="<span class="highlightVal">pagination small</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Previous<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Next<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/ul<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <ul class="pagination large">
+                            <li class="pgItem"><a class="pgLink" href="#">Previous</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">1</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">2</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">3</a></li>
+                            <li class="pgItem"><a class="pgLink" href="#">Next</a></li>
+                        </ul>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;ul class="pagination large"&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="pgItem"&gt;&lt;a class="pgLink" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>ul <span class="highlightAttr">class</span>="<span class="highlightVal">pagination large</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Previous<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">pgItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">pgLink</span>" href="#"<span class="bracket">&gt;</span>Next<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/ul<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <h2 class="p2020">Breadcrumb</h2>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumbItem"><a href="#">Home</a></li>
+                            <li class="breadcrumbItem"><a href="#">Products</a></li>
+                            <li class="breadcrumbItem"><a href="#">Car</a></li>
+                            <li class="breadcrumbItem active"><a href="#">Photos</a></li>
+                        </ul>
+                        <!--Snippet starts-->
+                        <div class="snippet mt20">
+                            <code class="hide">
+&lt;ul class="breadcrumb"&gt;
+    &lt;li class="breadcrumbItem"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumbItem"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumbItem"&gt;&lt;a href="#"&gt;Car&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumbItem active"&gt;&lt;a href="#"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>ul <span class="highlightAttr">class</span>="<span class="highlightVal">breadcrumb</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">breadcrumbItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a href="#"<span class="bracket">&gt;</span>Home<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">breadcrumbItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a href="#"<span class="bracket">&gt;</span>Products<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">breadcrumbItem</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a href="#"<span class="bracket">&gt;</span>Car<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>li <span class="highlightAttr">class</span>="<span class="highlightVal">breadcrumbItem active</span>"<span class="bracket">&gt;</span><span class="bracket">&lt;</span>a href="#"<span class="bracket">&gt;</span>Photos<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span><span class="bracket">&lt;</span>/li<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/ul<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="buttons.html" class="">Previous</a>
+                            <a href="cards.html" class="">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

@@ -296,11 +296,11 @@ button:hover, .btn:hover{background-color: #d2d1d1;}
 
 /*PAGINATION*/
 .pagination{display: flex;}
-.pagination li .pgLink{display: block;margin-left: -1px;padding: 10px 15px;color: #007bff;background-color: #fff;border: 1px solid #dee2e6;transition: .3s;-webkit-transition: .3s;}
-.pagination li:first-child .pgLink{margin-left: 0;border-top-left-radius: 3px;border-bottom-left-radius: 3px;}
-.pagination li .pgLink:hover{background-color: #e7e4e4;}
-.pagination li.disabled a{pointer-events: none;color: #bdb5b5;}
-.pagination li.active a, .pagination li.active a:hover{background-color:#4da1de;color: #FFF;border-color: #4da1de;}
+.pagination .pgItem .pgLink{display: block;margin-left: -1px;padding: 10px 15px;color: #007bff;background-color: #fff;border: 1px solid #dee2e6;transition: .3s;-webkit-transition: .3s;}
+.pagination .pgItem:first-child .pgLink{margin-left: 0;border-top-left-radius: 3px;border-bottom-left-radius: 3px;}
+.pagination .pgItem .pgLink:hover{background-color: #e7e4e4;}
+.pagination .pgItem.disabled a{pointer-events: none;color: #bdb5b5;}
+.pagination .pgItem.active a, .pagination .pgItem.active a:hover{background-color:#4da1de;color: #FFF;border-color: #4da1de;}
 .pagination.small li .pgLink{padding: 8px 10px;font-size: 12px;}
 .pagination.large li .pgLink{padding: 20px;}
 /*PAGINATION*/
@@ -328,7 +328,6 @@ button:hover, .btn:hover{background-color: #d2d1d1;}
 .dropdown .ddmItem.active{color: #FFF;background-color: #4da1de;}
 .dropdown .ddmItem.disabled {pointer-events: none;color: #bdb5b5;}
 .dropdown.hover .ddTrigger:hover+.ddmenu{display: block;}
-.dropdown.right .ddmenu{left: unset;top: 0; backface-visibility: hidden;}
 /*DROPDOWN*/
 
 /*COLLAPSE*/

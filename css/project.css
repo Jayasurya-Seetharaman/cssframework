@@ -5,16 +5,24 @@ header{background: #2b5876;padding: 40px 0;}
 .sideNav{position: sticky; position: -webkit-sticky;top: 60px;}
 .sideNav .snMenuDD{}
 .sideNav .snMenuDD .snmDDHead{display: block;padding-bottom: 10px;}
+.sideNav .snMenuDD .snmDDHead.active{color: #50a1ff;}
 .sideNav .snMenuDD .snmBody{display: none;}
 .sideNav .snMenuDD .snmDDItem{display: block;padding: 10px 15px;}
 /*SIDE-NAV*/
 
 /*SNIPPET*/
 .snippet{position: relative;padding: 15px;background-color: #e3e4e4;border-radius: 4px;margin-bottom: 15px;}
-.snippet .copyClipboard{position: absolute;right: 15px;top: 15px;}
-.snippet .copyClipboard:hover{background-color: #4da1de;color: #FFF;}
+.snippet .copyClipboard{position: absolute;right: 15px;top: 15px;color: #FFF;background: #4da1de;}
+.snippet .copyClipboard:hover{background-color: #195c8c;}
 .snippet pre{padding: 0;margin:0;background-color: transparent;border:none; overflow-x: auto; max-width: 950px; width: 100%;}
 .snippet pre code{color: #000;cursor: text;}
+.snippet code.hide{display: none;}
+
+.snippet pre code{color: #000;}
+.snippet pre code .highlightAttr{color: #905;}
+.snippet pre code .highlightVal{color: #07a;}
+.snippet pre code .bracket{color: #999;}
+.snippet pre code .hTags{color: #6a715c;}
 /*SNIPPET*/
 
 /*GRIDEXAMPLE*/
@@ -52,3 +60,8 @@ header{background: #2b5876;padding: 40px 0;}
 }
 [class*="flexGap"] {border: none !important;margin-left: 0 !important;}
 /*GRIDEXAMPLE*/
+
+/*btn*/
+.btnDownld{font-size: 12px; padding: 8px 26px; letter-spacing: 1.7px; text-transform: uppercase; border-radius: 2px; outline: none; color: #fff; background-color: #926dde; border-color: #926dde; -webkit-transition: 0.15s linear; transition: 0.15s linear;}
+.btnDoc{font-size: 12px; padding: 8px 26px; letter-spacing: 1.7px; text-transform: uppercase; border-radius: 2px; outline: none; color: #fff; background-color: #191919; border-color: #191919; -webkit-transition: 0.15s linear; transition: 0.15s linear;}
+/*btn*/

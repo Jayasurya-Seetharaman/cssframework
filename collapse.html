@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightCss | Collapse & Accordion</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uttilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/project.css" />
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <header>
+            <div class="container1180">
+                <div class="flex flexAlignItemsCenter flexJustifyBetween">
+
+                    <div>
+                        <a href="index.html" class="white">Light Css</a>
+                    </div>
+                    <a href="" class="white">Download</a>
+                </div>
+                <h4 class="white p3000">Documentation</h4>
+            </div>
+        </header>
+
+        <div class="container1180 pagePad p4040">
+            <div class="flex">
+                <div class="flex1">
+                    <ul class="sideNav">
+                        <li class="snMenuDD">
+                            <a href="tables.html" class="snmDDHead">Tables</a>
+                            <a href="alerts.html" class="snmDDHead">Alerts</a>
+                            <a href="buttons.html" class="snmDDHead">Buttons</a>
+                            <a href="images.html" class="snmDDHead">Images</a>
+                            <a href="collapse.html" class="snmDDHead active">Dropdowns</a>
+                            <a href="forms.html" class="snmDDHead">Forms</a>
+                            <a href="pagination.html" class="snmDDHead">Pagination</a>
+                            <a href="cards.html" class="snmDDHead">Cards</a>
+                            <a href="modals.html" class="snmDDHead">Modals</a>
+                            <a href="columns.html" class="snmDDHead">Grids</a>
+                            <a href="utility.html" class="snmDDHead">Utility Classes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex4">
+                    <div class="w700">
+                        <h1>Collapse</h1>
+                        <h4 class="p2020">Basic Collapse</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;button class="btn primary collapseTrigger" data-target="#demo1"&gt;Collapse&lt;/button&gt;
+&lt;div id="demo1" class="collapse"&gt;
+    &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">collapseTrigger</span>" <span class="highlightAttr">data-target</span>="<span class="highlightVal">#demo1</span>"<span class="bracket">&gt;</span>Collapse<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">id</span>="<span class="highlightVal">demo1</span>" <span class="highlightAttr">class</span>="<span class="highlightVal">collapse</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <button class="btn primary collapseTrigger" data-target="#demo1">Collapse</button>
+                        <div id="demo1" class="collapse">
+                            <p class="p2020">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.</p>
+                        </div>
+
+                        <h4 class="p2020">Show Collapse</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;button class="btn primary collapseTrigger" data-target="#demo2"&gt;Collapse&lt;/button&gt;
+&lt;div id="demo2" class="collapse show"&gt;
+    &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>button <span class="highlightAttr">class</span>="<span class="highlightVal">collapseTrigger</span>" <span class="highlightAttr">data-target</span>="<span class="highlightVal">#demo2</span>"<span class="bracket">&gt;</span>Collapse<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">id</span>="<span class="highlightVal">demo2</span>" <span class="highlightAttr">class</span>="<span class="highlightVal">collapse show</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span></span></code>
+</pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <button class="btn primary collapseTrigger" data-target="#demo2">Collapse</button>
+                        <div id="demo2" class="collapse show">
+                            <p class="p2020">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.</p>
+                        </div>
+
+                        <h2 class="p4000">Accordion</h2>
+                        <h4 class="p2020">Basic</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;div class="accordionGroup"&gt;
+    &lt;div class="accordion show"&gt;
+        &lt;a href="javascript:void(0)" class="accordionTrigger"&gt;Acoordion 1&lt;/a&gt;
+        &lt;div class="accordionBody"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion"&gt;
+        &lt;a href="javascript:void(0)" class="accordionTrigger"&gt;Acoordion 2&lt;/a&gt;
+        &lt;div class="accordionBody"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion"&gt;
+        &lt;a href="javascript:void(0)" class="accordionTrigger"&gt;Acoordion 3&lt;/a&gt;
+        &lt;div class="accordionBody"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionGroup</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordion show</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="javascript:void(0)" <span class="highlightAttr">class</span>="<span class="highlightVal">accordionTrigger</span>"<span class="bracket">&gt;</span>Acoordion 1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionBody</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordion</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="javascript:void(0)" <span class="highlightAttr">class</span>="<span class="highlightVal">accordionTrigger</span>"<span class="bracket">&gt;</span>Acoordion 2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionBody</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordion</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="javascript:void(0)" <span class="highlightAttr">class</span>="<span class="highlightVal">accordionTrigger</span>"<span class="bracket">&gt;</span>Acoordion 3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionBody</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>    
+</span></code></pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <div class="accordionGroup">
+                            <div class="accordion show">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 1</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 2</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 3</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Accordion Collape</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;div class="accordionGroup collapse"&gt;
+    &lt;div class="accordion show"&gt;
+        &lt;a href="javascript:void(0)" class="accordionTrigger"&gt;Acoordion 1&lt;/a&gt;
+        &lt;div class="accordionBody"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion"&gt;
+        &lt;a href="javascript:void(0)" class="accordionTrigger"&gt;Acoordion 2&lt;/a&gt;
+        &lt;div class="accordionBody"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion"&gt;
+        &lt;a href="javascript:void(0)" class="accordionTrigger"&gt;Acoordion 3&lt;/a&gt;
+        &lt;div class="accordionBody"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionGroup collapse</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordion show</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="javascript:void(0)" <span class="highlightAttr">class</span>="<span class="highlightVal">accordionTrigger</span>"<span class="bracket">&gt;</span>Acoordion 1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionBody</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordion</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="javascript:void(0)" <span class="highlightAttr">class</span>="<span class="highlightVal">accordionTrigger</span>"<span class="bracket">&gt;</span>Acoordion 2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionBody</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordion</span>"<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>a href="javascript:void(0)" <span class="highlightAttr">class</span>="<span class="highlightVal">accordionTrigger</span>"<span class="bracket">&gt;</span>Acoordion 3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">accordionBody</span>"<span class="bracket">&gt;</span>
+            <span class="bracket">&lt;</span>p<span class="bracket">&gt;</span>...<span class="bracket">&lt;</span>/p<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>    
+</span></code></pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <div class="accordionGroup collapse">
+                            <div class="accordion show">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 1</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 2</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <a href="javascript:void(0)" class="accordionTrigger">Acoordion 3</a>
+                                <div class="accordionBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Dropdown Active & Disabled</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;div class="dropdown click"&gt;
+    &lt;button type="button" class="btn primary ddTrigger"&gt;Dropdown button&lt;/button&gt;
+    &lt;div class="ddmenu"&gt;
+        &lt;a class="ddmItem" href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a class="ddmItem active" href="#"&gt;Link 2&lt;/a&gt;
+        &lt;a class="ddmItem disabled" href="#"&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">dropdown click</span>"<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>button type="button" <span class="highlightAttr">class</span>="<span class="highlightVal">ddTrigger</span>"<span class="bracket">&gt;</span>Dropdown button<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ddmenu</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">ddmItem</span>" href="#"<span class="bracket">&gt;</span>Link 1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">ddmItem active</span>" href="#"<span class="bracket">&gt;</span>Link 2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">ddmItem disabled</span>" href="#"<span class="bracket">&gt;</span>Link 3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+</span></code></pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <div class="dropdown click">
+                            <button type="button" class="btn primary ddTrigger">Dropdown button</button>
+                            <div class="ddmenu">
+                                <a class="ddmItem" href="#">Link 1</a>
+                                <a class="ddmItem active" href="#">Link 2</a>
+                                <a class="ddmItem disabled" href="#">Link 3</a>
+                            </div>
+                        </div>
+
+                        <h4 class="p2020">Hover Dropdown</h4>
+                        <!--Snippet starts-->
+                        <div class="snippet mb20">
+                            <code class="hide">
+&lt;div class="dropdown hover"&gt;
+    &lt;button type="button" class="btn primary ddTrigger"&gt;Dropdown button&lt;/button&gt;
+    &lt;div class="ddmenu"&gt;
+        &lt;a class="ddmItem" href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a class="ddmItem active" href="#"&gt;Link 2&lt;/a&gt;
+        &lt;a class="ddmItem disabled" href="#"&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                            <pre><code>
+<span class="hTags"><span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">dropdown hover</span>"<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>button type="button" <span class="highlightAttr">class</span>="<span class="highlightVal">ddTrigger</span>"<span class="bracket">&gt;</span>Dropdown button<span class="bracket">&lt;</span>/button<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>div <span class="highlightAttr">class</span>="<span class="highlightVal">ddmenu</span>"<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">ddmItem</span>" href="#"<span class="bracket">&gt;</span>Link 1<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">ddmItem active</span>" href="#"<span class="bracket">&gt;</span>Link 2<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+    <span class="bracket">&lt;</span>a <span class="highlightAttr">class</span>="<span class="highlightVal">ddmItem disabled</span>" href="#"<span class="bracket">&gt;</span>Link 3<span class="bracket">&lt;</span>/a<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+<span class="bracket">&lt;</span>/div<span class="bracket">&gt;</span>
+</span></code></pre>
+                            <button type="button" class="btn small copyClipboard">Copy</button>
+                        </div>
+                        <!--Snippet ends-->
+                        <div class="dropdown hover">
+                            <button type="button" class="btn primary ddTrigger">Dropdown</button>
+                            <div class="ddmenu">
+                                <a class="ddmItem" href="#">Link 1</a>
+                                <a class="ddmItem" href="#">Link 2</a>
+                                <a class="ddmItem" href="#">Link 3</a>
+                            </div>
+                        </div>
+
+                        <div class="p4000 flex flexJustifyBetween">
+                            <a href="images.html" class="">Previous</a>
+                            <a href="forms.html" class="">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+</body>
+
+</html>

@@ -125,7 +125,7 @@ $(document).ready(function () {
     // });
     var copyCode = '';
     $(".copyClipboard").click(function () {
-        copyCode = $(this).closest(".snippet").find("code").get(0);
+        copyCode = $(this).closest(".snippet").find("code.hide").get(0);
         console.log('B: ' + copyCode);
         console.log('Block: ' + copyCode.innerHTML);
     });
@@ -134,6 +134,8 @@ $(document).ready(function () {
             var res = copyCode.innerHTML;
             res = res.replace(/&lt;/g, '<');
             res = res.replace(/&gt;/g, '>');
+            // res = res.replace(/<span class="bracket">/g, '');
+            // res = res.replace(/<span class="bracket"><</span > <span class="tag"></span> / g, '');
             return res;
         }
     });
