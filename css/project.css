@@ -2,7 +2,7 @@
 header{background: #2b5876;padding: 40px 0;}
 
 /*SIDE-NAV*/
-.sideNav{position: sticky; position: -webkit-sticky;top: 60px;}
+.sideNav{position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; top: 60px;}
 .sideNav .snMenuDD{}
 .sideNav .snMenuDD .snmDDHead{display: block;padding-bottom: 10px;}
 .sideNav .snMenuDD .snmDDHead.active{color: #50a1ff;}
